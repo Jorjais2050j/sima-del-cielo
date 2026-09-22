@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Tokens de diseño — única fuente de colores/tipografía para Tailwind (bg-bg, text-ink, font-serif…) */
+@theme {
+  --color-bg: #f5f3ee;
+  --color-surface: #ebe7de;
+  --color-ink: #141a13;
+  --color-ink-2: #4a5146;
+  --color-line: rgb(20 26 19 / 0.13);
+  --color-forest: #2e5e1e;
+  --color-deep: #0f1a10;
+  --color-on-dark: #f2efe7;
+  --color-on-dark-2: #a8b09f;
+  --color-line-dark: rgb(242 239 231 / 0.14);
+  --color-whatsapp: #1f7a46;
+
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Hanken Grotesk", system-ui, sans-serif;
+
+  --radius-card: 22px;
+  --ease-premium: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-bg text-ink font-sans antialiased; }
+  section[id] { scroll-margin-top: 72px; }
+  a:hover { color: var(--color-forest); }
+  :focus-visible { outline: 2px solid var(--color-forest); outline-offset: 3px; border-radius: 6px; }
+  ::selection { background: #cfdcc4; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+}
+
+@utility container-page {
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 5vw, 72px);
+}
+@utility eyebrow {
+  font: 600 12px/1 var(--font-sans);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
+}
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}

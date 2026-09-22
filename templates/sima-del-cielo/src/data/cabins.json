@@ -1,0 +1,330 @@
+[
+  {
+    "id": "cab-pura-vida",
+    "slug": "pura-vida",
+    "name": "Pura Vida",
+    "category": "cabana",
+    "description": null,
+    "features": [
+      "Cama king size",
+      "Cama individual",
+      "Cocineta con frigobar",
+      "Baño (1)",
+      "Sala / comedor chico"
+    ],
+    "capacity": {
+      "baseGuests": 2,
+      "maxGuests": null
+    },
+    "price": {
+      "amount": 1550,
+      "currency": "MXN",
+      "unit": "night",
+      "guests": 2
+    },
+    "images": [
+      {
+        "src": "/media/cabins/pura-vida-1.jpg",
+        "alt": "Exterior de la cabaña Pura Vida con paneles solares",
+        "width": 913,
+        "height": 567
+      },
+      {
+        "src": "/media/cabins/pura-vida-2.jpg",
+        "alt": "Cocineta de la cabaña Pura Vida",
+        "width": 1066,
+        "height": 1200
+      },
+      {
+        "src": "/media/cabins/pura-vida-3.jpg",
+        "alt": "Recámara con cama king size",
+        "width": 502,
+        "height": 545
+      },
+      {
+        "src": "/media/cabins/pura-vida-4.jpg",
+        "alt": "Comedor con ventanales",
+        "width": 502,
+        "height": 545
+      },
+      {
+        "src": "/media/cabins/pura-vida-5.jpg",
+        "alt": "Baño con lavabo de talavera",
+        "width": 498,
+        "height": 545
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "id": "cab-alegria",
+    "slug": "alegria",
+    "name": "Alegría",
+    "category": "cabana",
+    "description": null,
+    "features": [
+      "Cama king size (1)",
+      "Baño (1)",
+      "Sala / comedor chico"
+    ],
+    "capacity": {
+      "baseGuests": 2,
+      "maxGuests": null
+    },
+    "price": {
+      "amount": 1175,
+      "currency": "MXN",
+      "unit": "night",
+      "guests": 2
+    },
+    "images": [
+      {
+        "src": "/media/cabins/alegria-1.jpg",
+        "alt": "Exterior de la cabaña Alegría entre jardines",
+        "width": 913,
+        "height": 567
+      },
+      {
+        "src": "/media/cabins/alegria-2.jpg",
+        "alt": "Sala y comedor con vitrales de colores",
+        "width": 1068,
+        "height": 1200
+      },
+      {
+        "src": "/media/cabins/alegria-3.jpg",
+        "alt": "Recámara con cama king size",
+        "width": 502,
+        "height": 546
+      },
+      {
+        "src": "/media/cabins/alegria-4.jpg",
+        "alt": "Sala con vitrales y mesa de madera",
+        "width": 501,
+        "height": 545
+      },
+      {
+        "src": "/media/cabins/alegria-5.jpg",
+        "alt": "Lavabo de talavera",
+        "width": 502,
+        "height": 545
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "id": "cab-armonia",
+    "slug": "armonia",
+    "name": "Armonía",
+    "category": "cabana",
+    "description": null,
+    "features": [
+      "Cama matrimonial (2)",
+      "Baño (1)",
+      "Sala / comedor chico"
+    ],
+    "capacity": {
+      "baseGuests": 2,
+      "maxGuests": null
+    },
+    "price": {
+      "amount": 1295,
+      "currency": "MXN",
+      "unit": "night",
+      "guests": 2
+    },
+    "images": [
+      {
+        "src": "/media/cabins/armonia-1.jpg",
+        "alt": "Exterior de la cabaña Armonía",
+        "width": 913,
+        "height": 567
+      },
+      {
+        "src": "/media/cabins/armonia-2.jpg",
+        "alt": "Comedor con ventanales",
+        "width": 1067,
+        "height": 1200
+      },
+      {
+        "src": "/media/cabins/armonia-3.jpg",
+        "alt": "Recámara con camas matrimoniales",
+        "width": 493,
+        "height": 540
+      },
+      {
+        "src": "/media/cabins/armonia-4.jpg",
+        "alt": "Sala y comedor",
+        "width": 864,
+        "height": 978
+      },
+      {
+        "src": "/media/cabins/armonia-5.jpg",
+        "alt": "Sala con mesa de madera",
+        "width": 947,
+        "height": 1200
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "id": "cab-paraiso",
+    "slug": "paraiso",
+    "name": "Paraíso",
+    "category": "cabana",
+    "description": null,
+    "features": [
+      "Cama king size (1)",
+      "Baño (1)",
+      "Sala / comedor chico"
+    ],
+    "capacity": {
+      "baseGuests": 2,
+      "maxGuests": null
+    },
+    "price": {
+      "amount": 1175,
+      "currency": "MXN",
+      "unit": "night",
+      "guests": 2
+    },
+    "images": [
+      {
+        "src": "/media/cabins/paraiso-1.jpg",
+        "alt": "Exterior de la cabaña Paraíso sobre pilotes",
+        "width": 913,
+        "height": 567
+      },
+      {
+        "src": "/media/cabins/paraiso-2.jpg",
+        "alt": "Sala con vitrales de colores",
+        "width": 1066,
+        "height": 1200
+      },
+      {
+        "src": "/media/cabins/paraiso-3.jpg",
+        "alt": "Puertas de madera y cristal al jardín",
+        "width": 497,
+        "height": 545
+      },
+      {
+        "src": "/media/cabins/paraiso-4.jpg",
+        "alt": "Interior con sillón y espejo",
+        "width": 980,
+        "height": 1109
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "id": "cab-serenidad",
+    "slug": "serenidad",
+    "name": "Serenidad",
+    "category": "cabana",
+    "description": null,
+    "features": [
+      "Habitación 1 y 2: cama matrimonial (2)",
+      "Planta alta: cama individual (2) y matrimonial (1)",
+      "Cocineta con frigobar",
+      "Baño (2)",
+      "Sala / comedor familiar",
+      "Terrazas"
+    ],
+    "capacity": {
+      "baseGuests": 8,
+      "maxGuests": null
+    },
+    "price": {
+      "amount": 3650,
+      "currency": "MXN",
+      "unit": "night",
+      "guests": 8
+    },
+    "images": [
+      {
+        "src": "/media/cabins/serenidad-1.jpg",
+        "alt": "Exterior de la cabaña Serenidad de dos plantas",
+        "width": 913,
+        "height": 567
+      },
+      {
+        "src": "/media/cabins/serenidad-2.jpg",
+        "alt": "Cocina y comedor familiar",
+        "width": 1066,
+        "height": 1200
+      },
+      {
+        "src": "/media/cabins/serenidad-3.jpg",
+        "alt": "Recámara con cama matrimonial",
+        "width": 503,
+        "height": 552
+      },
+      {
+        "src": "/media/cabins/serenidad-4.jpg",
+        "alt": "Sala en la planta baja",
+        "width": 946,
+        "height": 1200
+      },
+      {
+        "src": "/media/cabins/serenidad-5.jpg",
+        "alt": "Comedor familiar",
+        "width": 502,
+        "height": 545
+      },
+      {
+        "src": "/media/cabins/serenidad-6.jpg",
+        "alt": "Vista al valle desde la terraza",
+        "width": 496,
+        "height": 545
+      }
+    ],
+    "isActive": true
+  },
+  {
+    "id": "cab-ilusion",
+    "slug": "ilusion",
+    "name": "Ilusión",
+    "category": "cabana",
+    "description": null,
+    "features": [
+      "Cama king size (1)",
+      "Baño (1)"
+    ],
+    "capacity": {
+      "baseGuests": 2,
+      "maxGuests": null
+    },
+    "price": {
+      "amount": 1175,
+      "currency": "MXN",
+      "unit": "night",
+      "guests": 2
+    },
+    "images": [
+      {
+        "src": "/media/cabins/ilusion-1.jpg",
+        "alt": "Exterior de la cabaña Ilusión",
+        "width": 913,
+        "height": 567
+      },
+      {
+        "src": "/media/cabins/ilusion-2.jpg",
+        "alt": "Interior con ventanales",
+        "width": 1067,
+        "height": 1200
+      },
+      {
+        "src": "/media/cabins/ilusion-3.jpg",
+        "alt": "Recámara con cama king size",
+        "width": 980,
+        "height": 1108
+      },
+      {
+        "src": "/media/cabins/ilusion-4.jpg",
+        "alt": "Estancia con vitrales",
+        "width": 497,
+        "height": 555
+      }
+    ],
+    "isActive": true
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "exp-romantica-completa",
+    "slug": "romantica-completa",
+    "name": "Experiencia completa",
+    "category": "romantico",
+    "price": {
+      "amount": 1600,
+      "currency": "MXN",
+      "unit": "experience",
+      "guests": 2
+    },
+    "includes": [
+      "Tabla de quesos y carnes frías para 2",
+      "Camino de pétalos de rosas y velas",
+      "Botella de vino de la casa"
+    ],
+    "notes": [
+      "No incluye noche de hospedaje"
+    ],
+    "images": [
+      {
+        "src": "/media/romantic/completa-1.jpg",
+        "alt": "Cabaña decorada con camino de pétalos y velas",
+        "width": 900,
+        "height": 1200
+      },
+      {
+        "src": "/media/romantic/completa-2.jpg",
+        "alt": "Tabla de quesos y carnes frías con copas de vino",
+        "width": 766,
+        "height": 510
+      }
+    ]
+  },
+  {
+    "id": "exp-romantica-basica",
+    "slug": "romantica-basica",
+    "name": "Experiencia básica",
+    "category": "romantico",
+    "price": {
+      "amount": 700,
+      "currency": "MXN",
+      "unit": "experience",
+      "guests": 2
+    },
+    "includes": [
+      "Camino de pétalos de rosas y velas"
+    ],
+    "notes": [
+      "No incluye noche de hospedaje"
+    ],
+    "images": [
+      {
+        "src": "/media/romantic/basica-1.jpg",
+        "alt": "Cama decorada con pétalos de rosa",
+        "width": 900,
+        "height": 1200
+      }
+    ]
+  }
+]

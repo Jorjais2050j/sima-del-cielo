@@ -1,0 +1,169 @@
+{
+  "groups": [
+    { "id": "cocina", "name": "Cocina" },
+    { "id": "bebidas", "name": "Bebidas" },
+    { "id": "para-llevar", "name": "Para llevar" }
+  ],
+  "categories": [
+    {
+      "id": "desayunos", "group": "cocina", "name": "Desayunos",
+      "description": null,
+      "items": [
+        { "id": "fruta-temporada", "name": "Fruta de temporada", "description": "Selección de frutas frescas del día, servidas con yogurt natural y granola artesanal.", "price": 75 },
+        { "id": "chilaquiles", "name": "Chilaquiles tradicionales", "description": "Totopos crujientes bañados en salsa roja de la casa, crema y queso fresco. Acompañados de 2 huevos estrellados.", "price": 135, "addons": [ { "label": "Pollo (100 g)", "price": 60 }, { "label": "Carne asada (100 g)", "price": 70 } ] },
+        { "id": "sima-del-cielo", "name": "Sima del Cielo", "description": "Huevos estrellados (2) bañados en salsa verde con hoja santa y longaniza. Servidos sobre tortilla recién hecha, untada con frijoles refritos, queso fresco y crema.", "price": 155 },
+        { "id": "zoque", "name": "Zoque", "description": "Huevos estrellados (2) bañados en salsa roja, con chorizo y chile simojovel. Montados sobre tortilla de chipilín, con frijoles refritos, queso fresco y crema.", "price": 155 },
+        { "id": "huevos-a-mi-manera", "name": "Huevos a mi manera", "description": "Con chorizo, longaniza, chayote tierno o en salsa de camarón. Acompañados de frijoles refritos y plátanos fritos.", "price": 135 }
+      ]
+    },
+    {
+      "id": "del-comal", "group": "cocina", "name": "Del comal",
+      "description": "Quesadillas de tortillas naturales o de chipilín.",
+      "items": [
+        { "id": "q-naturales", "name": "Las de siempre", "description": "Naturales", "price": 35 },
+        { "id": "q-huerto", "name": "Del huerto", "description": "Epazote o champiñones", "price": 40 },
+        { "id": "q-poderosas", "name": "Las poderosas", "description": "Chorizo o longaniza", "price": 45 },
+        { "id": "q-carne", "name": "Carne asada", "description": null, "price": 45 }
+      ]
+    },
+    {
+      "id": "para-abrir", "group": "cocina", "name": "Sabores que abren camino",
+      "description": "Abren camino al paladar, pero también a la memoria.",
+      "items": [
+        { "id": "guacamole", "name": "Verde del molcajete", "description": "Guacamole. Auténtico y lleno de sabor.", "price": 115 },
+        { "id": "frijol-rancho", "name": "Frijol de rancho con trozos de fiesta", "description": "Frijoles de la olla con chicharrón.", "price": 115 },
+        { "id": "bravura", "name": "Bravura del frijol", "description": "Frijol refrito con chorizo y chile simojovel. Con queso fresco y crema.", "price": 105 },
+        { "id": "crujiente", "name": "Crujiente con corazón de huerto", "description": "Chicharrón con pico de gallo recién hecho.", "price": 135 }
+      ]
+    },
+    {
+      "id": "botanas", "group": "cocina", "name": "Botanas",
+      "description": null,
+      "items": [
+        { "id": "aguachile", "name": "Camarón seco en aguachile", "description": null, "price": 125 },
+        { "id": "turulo", "name": "Camarón turulo", "description": null, "price": 125 },
+        { "id": "quesillo", "name": "Quesillo", "description": null, "price": 125 }
+      ]
+    },
+    {
+      "id": "para-el-alma", "group": "cocina", "name": "Sabores que abrazan el alma",
+      "description": null,
+      "items": [
+        { "id": "caldo-gallina", "name": "Caldo de gallina de rancho", "description": null, "price": 195 },
+        { "id": "sihuamonte", "name": "Caldo de sihuamonte", "description": null, "price": 195 },
+        { "id": "cocido", "name": "Cocido de res", "description": null, "price": 195 },
+        { "id": "mondongo", "name": "Mondongo", "description": null, "price": 195 },
+        { "id": "pollo-mole", "name": "Pollo con mole", "description": null, "price": 175 },
+        { "id": "enmoladas", "name": "Enmoladas", "description": null, "price": 175 },
+        { "id": "tlayuda", "name": "Tlayuda de res", "description": null, "price": 245 }
+      ]
+    },
+    {
+      "id": "de-la-milpa", "group": "cocina", "name": "De la milpa",
+      "description": "Tamales envueltos con historia, cocidos con calma, servidos con chirmol y chile güero.",
+      "items": [
+        { "id": "tamales", "name": "Tamales chiapanecos (2 piezas)", "description": "Chipilín con pollo, bola o mole", "price": 85 }
+      ]
+    },
+    {
+      "id": "entre-brasas", "group": "cocina", "name": "Entre brasas",
+      "description": "Servido con una quesadilla, cebollita asada, frijoles de la olla y nopalitos.",
+      "items": [
+        { "id": "carne-asada", "name": "Carne asada", "description": null, "price": 195 },
+        { "id": "chorizo", "name": "Chorizo", "description": null, "price": 185 },
+        { "id": "tampiquena", "name": "Tampiqueña", "description": null, "price": null }
+      ]
+    },
+    {
+      "id": "del-horno", "group": "cocina", "name": "Del horno",
+      "description": "El fuego le da sabor, la tierra le da alma.",
+      "items": [
+        { "id": "barbacoa", "name": "Barbacoa de borrego", "description": "Cocida lentamente al horno, estilo Hidalgo. Acompañada de consomé.", "price": 245 },
+        { "id": "lechon", "name": "Lechón al horno", "description": null, "price": 215 },
+        { "id": "cochito", "name": "Cochito horneado", "description": "Cerdo marinado con especias tradicionales y horneado.", "price": 215 }
+      ]
+    },
+    {
+      "id": "postres", "group": "cocina", "name": "El último suspiro",
+      "description": "Porque siempre hay espacio para lo dulce.",
+      "items": [
+        { "id": "flan", "name": "Flan napolitano", "description": null, "price": 110 },
+        { "id": "consentida", "name": "La consentida", "description": "Concha de vainilla rellena de nata.", "price": 85 },
+        { "id": "platanos", "name": "Plátanos fritos", "description": "Con lechera o queso y crema.", "price": 95 },
+        { "id": "pan-regional", "name": "Orden de pan regional (5 pzas)", "description": null, "price": 40 }
+      ]
+    },
+    {
+      "id": "para-acompanar", "group": "bebidas", "name": "Para acompañar",
+      "description": null,
+      "items": [
+        { "id": "tascalate-agua", "name": "Tascalate con agua", "description": null, "price": 45 },
+        { "id": "tascalate-leche", "name": "Tascalate con leche", "description": null, "price": 55 },
+        { "id": "agua-fresca", "name": "Agua fresca del día", "description": null, "price": 45 },
+        { "id": "refrescos", "name": "Refrescos", "description": null, "price": 45 },
+        { "id": "agua-embotellada", "name": "Agua embotellada", "description": null, "price": 35 }
+      ]
+    },
+    {
+      "id": "tazas", "group": "bebidas", "name": "Tazas",
+      "description": null,
+      "items": [
+        { "id": "cafe-olla", "name": "Café de olla", "description": null, "price": 45 },
+        { "id": "cafe-chiapaneco", "name": "Café chiapaneco", "description": null, "price": 40 },
+        { "id": "cafe-leche", "name": "Café con leche", "description": null, "price": 50 },
+        { "id": "chocolate", "name": "Chocolate caliente", "description": null, "price": 60 },
+        { "id": "chocolate-piquete", "name": "Chocolate con piquete", "description": null, "price": 85 }
+      ]
+    },
+    {
+      "id": "cervezas", "group": "bebidas", "name": "Cervezas",
+      "description": "Michelada, clamatada o chelada + $35",
+      "items": [
+        { "id": "heineken", "name": "Heineken 355 ml", "description": null, "price": 47 },
+        { "id": "bohemia-oscura", "name": "Bohemia Oscura 355 ml", "description": null, "price": 47 },
+        { "id": "bohemia-clara", "name": "Bohemia Clara 355 ml", "description": null, "price": 47 },
+        { "id": "bohemia-cristal", "name": "Bohemia Cristal 355 ml", "description": null, "price": null },
+        { "id": "xx-lager", "name": "XX Lager 325 ml", "description": null, "price": 40 },
+        { "id": "xx-ambar", "name": "XX Ámbar 325 ml", "description": null, "price": 40 },
+        { "id": "tecate-light", "name": "Tecate Light 325 ml", "description": null, "price": 40 },
+        { "id": "amstel-ultra", "name": "Amstel Ultra 355 ml", "description": null, "price": 47 }
+      ]
+    },
+    {
+      "id": "destilados", "group": "bebidas", "name": "Destilados",
+      "description": "Copeo 2 oz",
+      "items": [
+        { "id": "mezcal-sima", "name": "Mezcal Sima del Cielo", "description": null, "price": 115 },
+        { "id": "licor-43", "name": "Licor 43", "description": "Digestivo", "price": 110 },
+        { "id": "chinchon", "name": "Chinchón (dulce o seco)", "description": "Digestivo", "price": 110 },
+        { "id": "baileys", "name": "Baileys", "description": "Digestivo", "price": 110 },
+        { "id": "buchanans-12", "name": "Buchanan’s 12", "description": "Whisky", "price": 155 },
+        { "id": "jw-red", "name": "JW Red Label", "description": "Whisky", "price": 95 },
+        { "id": "jw-black", "name": "JW Black Label", "description": "Whisky", "price": 165 },
+        { "id": "smirnoff", "name": "Smirnoff", "description": "Vodka", "price": 80 },
+        { "id": "stolichnaya", "name": "Stolichnaya", "description": "Vodka", "price": 110 },
+        { "id": "bacardi", "name": "Bacardí blanco", "description": "Ron", "price": 90 },
+        { "id": "dj-blanco", "name": "Don Julio blanco", "description": "Tequila", "price": 140 },
+        { "id": "dj-70", "name": "Don Julio 70", "description": "Tequila", "price": 185 },
+        { "id": "cuervo-reposado", "name": "José Cuervo Tradicional reposado", "description": "Tequila", "price": 105 },
+        { "id": "cuervo-plata", "name": "José Cuervo Tradicional plata", "description": "Tequila", "price": 105 }
+      ]
+    },
+    {
+      "id": "cantaritos", "group": "bebidas", "name": "Cantaritos",
+      "description": null,
+      "items": [
+        { "id": "cantarito", "name": "Cantarito", "description": null, "price": 125 }
+      ]
+    },
+    {
+      "id": "nuestra-tierra", "group": "para-llevar", "name": "De nuestra tierra a tu casa",
+      "description": "Exclusivo para llevar.",
+      "items": [
+        { "id": "miel", "name": "Miel Sima del Cielo", "description": null, "price": null, "variants": [ { "label": "½ lt", "price": 110 }, { "label": "1 lt", "price": 195 } ] },
+        { "id": "cafe-sima", "name": "Café Sima del Cielo", "description": null, "price": null, "variants": [ { "label": "½ kg", "price": 225 }, { "label": "1 kg", "price": 425 } ] },
+        { "id": "papalote", "name": "Papalote Sima del Cielo", "description": null, "price": 150 }
+      ]
+    }
+  ]
+}

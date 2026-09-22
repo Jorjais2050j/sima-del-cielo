@@ -1,0 +1,370 @@
+[
+  {
+    "id": "pkg-senderos-am",
+    "slug": "senderos-am",
+    "name": "Senderos",
+    "schedule": "am",
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 385,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo",
+      "Desayuno: huevos al gusto o chilaquiles con huevo, taza de café y vaso de agua del día"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/senderos-am-1.jpg",
+        "alt": "Pareja caminando por los senderos entre vegetación",
+        "width": 1200,
+        "height": 745
+      },
+      {
+        "src": "/media/packages/senderos-am-2.jpg",
+        "alt": "Chilaquiles con huevo y agua del día",
+        "width": 501,
+        "height": 502
+      }
+    ]
+  },
+  {
+    "id": "pkg-senderos-pm",
+    "slug": "senderos-pm",
+    "name": "Senderos",
+    "schedule": "pm",
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 415,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo",
+      "Comida: enmoladas de pollo o cochito horneado y vaso de agua del día"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/senderos-pm-1.jpg",
+        "alt": "Pareja descansando junto a las rocas del sendero",
+        "width": 1200,
+        "height": 745
+      },
+      {
+        "src": "/media/packages/senderos-pm-2.jpg",
+        "alt": "Cochito horneado servido con arroz y ensalada",
+        "width": 513,
+        "height": 514
+      }
+    ]
+  },
+  {
+    "id": "pkg-explorador-am",
+    "slug": "explorador-am",
+    "name": "Explorador",
+    "schedule": "am",
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 1435,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo",
+      "Descenso a rappel con equipo a la Sima del Cielo",
+      "Desayuno: huevos al gusto o chilaquiles con huevo, taza de café y vaso de agua del día"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/explorador-am-1.jpg",
+        "alt": "Luz del sol entrando al interior de la sima",
+        "width": 934,
+        "height": 1200
+      },
+      {
+        "src": "/media/packages/explorador-am-2.jpg",
+        "alt": "Desayuno servido en la terraza",
+        "width": 501,
+        "height": 502
+      }
+    ]
+  },
+  {
+    "id": "pkg-explorador-pm",
+    "slug": "explorador-pm",
+    "name": "Explorador",
+    "schedule": "pm",
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 1465,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo",
+      "Descenso a rappel con equipo a la Sima del Cielo",
+      "Comida: enmoladas de pollo o cochito horneado y vaso de agua del día"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/explorador-pm-1.jpg",
+        "alt": "Descenso a rappel dentro de la sima",
+        "width": 934,
+        "height": 1200
+      }
+    ]
+  },
+  {
+    "id": "pkg-rappel-romantico",
+    "slug": "rappel-romantico",
+    "name": "Rappel romántico",
+    "schedule": null,
+    "category": "aventura",
+    "tags": [
+      "romantico"
+    ],
+    "price": {
+      "amount": 3900,
+      "currency": "MXN",
+      "unit": "group",
+      "guests": 2
+    },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo",
+      "Descenso a rappel con equipo a la Sima del Cielo para dos personas",
+      "Tabla de quesos y carnes frías / vino de la casa servido en el interior de la sima"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/rappel-romantico-1.jpg",
+        "alt": "Pareja brindando en el fondo de la sima",
+        "width": 1037,
+        "height": 644
+      },
+      {
+        "src": "/media/packages/rappel-romantico-2.jpg",
+        "alt": "Pareja con equipo de rappel brindando",
+        "width": 958,
+        "height": 596
+      }
+    ]
+  },
+  {
+    "id": "pkg-romantico-exclusivo",
+    "slug": "romantico-exclusivo",
+    "name": "Romántico exclusivo",
+    "schedule": null,
+    "category": "aventura",
+    "tags": [
+      "romantico"
+    ],
+    "price": {
+      "amount": 4500,
+      "currency": "MXN",
+      "unit": "group",
+      "guests": 2
+    },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo",
+      "Descenso a rappel con equipo a la Sima del Cielo para dos personas",
+      "Tabla de quesos y carnes frías / vino de la casa servido en el interior de la sima",
+      "Estructura de corazón con flores artificiales en el interior de la sima"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/romantico-exclusivo-1.jpg",
+        "alt": "Pareja frente a la estructura de corazón con flores dentro de la sima",
+        "width": 903,
+        "height": 1017
+      }
+    ]
+  },
+  {
+    "id": "pkg-recorrido",
+    "slug": "recorrido",
+    "name": "Recorrido",
+    "schedule": null,
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 200,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/recorrido-1.jpg",
+        "alt": "Estanque y jardín dentro del parque",
+        "width": 938,
+        "height": 1200
+      },
+      {
+        "src": "/media/packages/recorrido-2.jpg",
+        "alt": "Pareja recorriendo el sendero",
+        "width": 481,
+        "height": 481
+      }
+    ]
+  },
+  {
+    "id": "pkg-rappel",
+    "slug": "rappel",
+    "name": "Rappel",
+    "schedule": null,
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 1250,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo",
+      "Descenso a rappel con equipo a la Sima del Cielo"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/rappel-1.jpg",
+        "alt": "Silueta en la boca de la sima frente a la vegetación",
+        "width": 475,
+        "height": 476
+      },
+      {
+        "src": "/media/packages/rappel-2.jpg",
+        "alt": "Descenso a rappel en el interior de la sima",
+        "width": 934,
+        "height": 1200
+      }
+    ]
+  },
+  {
+    "id": "pkg-camping",
+    "slug": "camping",
+    "name": "Camping",
+    "schedule": null,
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 180,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso a áreas comunes para acampar"
+    ],
+    "notes": [
+      "No incluye casa de campaña ni acceso a senderos"
+    ],
+    "images": [
+      {
+        "src": "/media/packages/camping-1.jpg",
+        "alt": "Casa de campaña en el área de camping",
+        "width": 934,
+        "height": 1200
+      }
+    ]
+  },
+  {
+    "id": "pkg-foto-clasica",
+    "slug": "sesion-fotos-clasica",
+    "name": "Sesión de fotos clásica",
+    "schedule": null,
+    "category": "sesion-fotos",
+    "tags": [],
+    "price": {
+      "amount": 1250,
+      "currency": "MXN",
+      "unit": "session",
+      "guests": 5
+    },
+    "includes": [
+      "Acceso al parque por 3 horas",
+      "Permitido 5 personas por sesión en áreas comunes de la Sima del Cielo"
+    ],
+    "notes": [
+      "No incluye fotógrafo ni descensos a rappel"
+    ],
+    "images": [
+      {
+        "src": "/media/packages/foto-clasica-1.jpg",
+        "alt": "Sesión de fotos de XV años junto a las rocas",
+        "width": 476,
+        "height": 477
+      },
+      {
+        "src": "/media/packages/foto-clasica-2.jpg",
+        "alt": "Novia en sesión de fotos entre la vegetación",
+        "width": 750,
+        "height": 960
+      }
+    ]
+  },
+  {
+    "id": "pkg-foto-aventura",
+    "slug": "sesion-fotos-aventura",
+    "name": "Sesión de fotos aventura",
+    "schedule": null,
+    "category": "sesion-fotos",
+    "tags": [],
+    "price": {
+      "amount": 1600,
+      "currency": "MXN",
+      "unit": "session",
+      "guests": 5
+    },
+    "includes": [
+      "Acceso al parque por 4 horas",
+      "Permitido 5 personas por sesión en áreas comunes de la Sima del Cielo",
+      "Acceso a senderos con acompañante para guiarlos a los mejores spots"
+    ],
+    "notes": [
+      "No incluye fotógrafo ni descensos a rappel",
+      "Precio rappel por persona: $1,100 (exclusivo para clientes con este paquete)"
+    ],
+    "images": [
+      {
+        "src": "/media/packages/foto-aventura-1.jpg",
+        "alt": "Novia entre la vegetación de la sima",
+        "width": 458,
+        "height": 459
+      },
+      {
+        "src": "/media/packages/foto-aventura-2.jpg",
+        "alt": "Vestido blanco en el fondo de la sima",
+        "width": 936,
+        "height": 1200
+      }
+    ]
+  }
+]

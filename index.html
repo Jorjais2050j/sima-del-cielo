@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sima del Cielo · Aventura Zoque — Cabañas, rappel y restaurante en San Fernando, Chiapas</title>
+<meta name="description" content="Parque ecoturístico en San Fernando, Chiapas. Seis cabañas, descenso a rappel a la sima, senderismo y restaurante de cocina regional.">
+<meta property="og:type" content="website"><meta property="og:title" content="Sima del Cielo · Aventura Zoque"><meta property="og:description" content="Parque ecoturístico en San Fernando, Chiapas."><meta property="og:image" content="templates/sima-del-cielo/public/media/packages/explorador-am-1.jpg"><meta property="og:locale" content="es_MX">
+<meta name="theme-color" content="#0f1a10">
+<link rel="icon" href="templates/sima-del-cielo/public/brand/logo-green.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="templates/sima-del-cielo/public/media/packages/explorador-am-1.jpg" fetchpriority="high">
+<style>
+:root{--bg:#f5f3ee;--surface:#ebe7de;--ink:#141a13;--ink-2:#4a5146;--line:rgba(20,26,19,.13);--forest:#2e5e1e;--deep:#0f1a10;--on-dark:#f2efe7;--on-dark-2:#a8b09f;--line-dark:rgba(242,239,231,.14);--serif:"Newsreader",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.2,1);--pad:clamp(20px,5vw,72px);--max:1360px;--r:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+a{color:inherit;text-decoration:none}a:hover{color:var(--forest)}
+:focus-visible{outline:2px solid var(--forest);outline-offset:3px;border-radius:6px}
+::selection{background:#cfdcc4}
+section[id]{scroll-margin-top:72px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
+.h2{font:300 clamp(44px,7vw,104px)/.95 var(--serif);letter-spacing:-.03em;margin:14px 0 0}
+.h2 em{font-style:italic}
+.lead{font:400 clamp(17px,1.4vw,19px)/1.6 var(--sans);color:var(--ink-2);max-width:46ch;text-wrap:pretty;margin:0}
+.btn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 24px;border-radius:999px;font:500 15px/1 var(--sans);transition:background .3s var(--ease),color .3s,transform .3s var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn-light{background:var(--on-dark);color:var(--ink)}.btn-light:hover{background:#fff;color:var(--ink)}
+.btn-ghost-light{border:1px solid rgba(255,255,255,.45);color:#fff}.btn-ghost-light:hover{background:rgba(255,255,255,.12);color:#fff}
+.btn-dark{background:var(--ink);color:var(--on-dark)}.btn-dark:hover{background:var(--forest);color:#fff}
+.btn svg{width:18px;height:18px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;height:68px;color:#fff;transition:background .4s var(--ease),color .4s,box-shadow .4s}
+.hdr .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+.hdr.solid{background:rgba(245,243,238,.82);backdrop-filter:saturate(1.6) blur(18px);-webkit-backdrop-filter:saturate(1.6) blur(18px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.brand{display:flex;align-items:center;height:52px}.brand img{height:48px;width:auto}
+.brand .g{display:none}.hdr.solid .brand .g{display:block}.hdr.solid .brand .w{display:none}
+.nav{display:none;gap:36px;font:500 14px/1 var(--sans);letter-spacing:.01em}
+.nav a{opacity:.9;position:relative;padding:8px 0}.nav a:hover{opacity:1;color:inherit}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}.nav a:hover::after{transform:scaleX(1)}
+.burger{width:44px;height:44px;display:grid;place-items:center;margin-right:-10px}.burger svg{width:22px;height:22px}
+@media (min-width:900px){.nav{display:flex}.burger{display:none}}
+.sheet{position:fixed;inset:0;z-index:60;background:var(--deep);color:var(--on-dark);display:flex;flex-direction:column;padding:0 var(--pad) calc(32px + env(safe-area-inset-bottom));opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s}
+.sheet.open{opacity:1;visibility:visible}
+.sheet-top{height:68px;display:flex;align-items:center;justify-content:space-between}
+.sheet nav{display:flex;flex-direction:column;gap:6px;margin-top:8vh}
+.sheet nav a{font:300 clamp(44px,12vw,64px)/1.1 var(--serif);letter-spacing:-.02em;transform:translateY(16px);opacity:0;transition:transform .6s var(--ease),opacity .6s}
+.sheet.open nav a{transform:none;opacity:1}.sheet.open nav a:nth-child(2){transition-delay:.05s}.sheet.open nav a:nth-child(3){transition-delay:.1s}.sheet.open nav a:nth-child(4){transition-delay:.15s}
+.sheet nav a:hover{color:var(--on-dark-2)}
+.sheet-foot{margin-top:auto;display:flex;flex-direction:column;gap:6px;color:var(--on-dark-2);font-size:15px}
+
+/* hero */
+.hero{position:relative;height:100vh;height:100svh;min-height:560px;overflow:hidden;background:var(--deep);color:#fff}
+.hero-media,.hero-media img,.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-media img{animation:heroIn 2.4s var(--ease) both}
+@keyframes heroIn{from{transform:scale(1.08);opacity:.4}to{transform:none;opacity:1}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,16,9,.45) 0%,rgba(10,16,9,0) 28%,rgba(10,16,9,0) 45%,rgba(10,16,9,.78) 100%)}
+.hero-body{position:absolute;z-index:2;left:0;right:0;bottom:0;padding-bottom:calc(clamp(40px,8vh,88px) + env(safe-area-inset-bottom))}
+.hero-body .wrap{display:grid;gap:28px}
+.hero .eyebrow{color:rgba(255,255,255,.8)}
+.hero h1{margin:0;font:300 clamp(64px,13vw,196px)/.86 var(--serif);letter-spacing:-.045em}
+.hero h1 em{display:block;font-style:italic;font-size:.42em;letter-spacing:-.02em;margin-top:.25em;color:rgba(255,255,255,.88)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.scrollcue{position:absolute;z-index:2;right:var(--pad);bottom:calc(clamp(40px,8vh,88px) + env(safe-area-inset-bottom));display:none;align-items:center;gap:14px;font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.scrollcue i{display:block;width:1px;height:56px;background:rgba(255,255,255,.35);position:relative;overflow:hidden}
+.scrollcue i::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:#fff;animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+@media (min-width:900px){.scrollcue{display:flex}}
+
+/* intro */
+.intro{padding:clamp(96px,14vw,200px) 0}
+.intro .wrap{display:grid;gap:56px;align-items:center}
+.intro p.big{font:300 clamp(28px,3.6vw,52px)/1.18 var(--serif);letter-spacing:-.02em;margin:18px 0 0;text-wrap:pretty}
+.intro p.big em{color:var(--forest)}
+.aperture{aspect-ratio:1;width:min(100%,560px);justify-self:center;border-radius:50%;overflow:hidden;background:var(--surface)}
+.aperture img{width:100%;height:100%;object-fit:cover}
+@supports (animation-timeline:view()){.aperture{border-radius:0;clip-path:circle(34% at 50% 50%);animation:aperture linear both;animation-timeline:view();animation-range:entry 10% cover 55%}@keyframes aperture{to{clip-path:circle(50% at 50% 50%)}}}
+@media (min-width:900px){.intro .wrap{grid-template-columns:1.2fr 1fr;gap:96px}}
+
+/* section head */
+.sec{padding:clamp(80px,10vw,160px) 0}
+.sec-head{display:grid;gap:28px;margin-bottom:clamp(40px,6vw,80px)}
+@media (min-width:900px){.sec-head{grid-template-columns:1fr auto;align-items:end}}
+.seg{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--pad)*-1);padding:2px var(--pad)}
+.seg::-webkit-scrollbar{display:none}
+.seg button{flex:none;height:40px;padding:0 18px;border-radius:999px;font:500 14px/1 var(--sans);color:var(--ink-2);border:1px solid var(--line);transition:all .3s var(--ease)}
+.seg button:hover{color:var(--ink);border-color:rgba(20,26,19,.3)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--on-dark);border-color:var(--ink)}
+@media (min-width:900px){.seg{margin:0;padding:2px}}
+
+/* packages */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--pad)*-1);padding:0 var(--pad) 8px;scroll-padding:0 var(--pad);scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.rail>*{scroll-snap-align:start}
+@media (min-width:640px){.rail{grid-auto-columns:46%}}
+@media (min-width:1024px){.rail{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin:0;padding:0;gap:48px 28px}}
+.pkg{display:flex;flex-direction:column;min-width:0}
+.pkg-img{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.pkg-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.pkg:hover .pkg-img img{transform:scale(1.04)}
+.chip{position:absolute;top:14px;left:14px;height:28px;padding:0 12px;display:inline-flex;align-items:center;border-radius:999px;background:rgba(245,243,238,.9);backdrop-filter:blur(8px);font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.chip.r{left:auto;right:14px}
+.pkg-body{padding:22px 4px 0;display:flex;flex-direction:column;gap:14px;flex:1}
+.pkg-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.pkg h3{margin:0;font:400 30px/1.05 var(--serif);letter-spacing:-.02em}
+.price{font:500 15px/1.3 var(--sans);white-space:nowrap;text-align:right}.price small{display:block;font-weight:400;font-size:13px;color:var(--ink-2)}
+.list{list-style:none;margin:0;padding:0;font-size:15px;line-height:1.45;color:var(--ink-2)}
+.list li{padding:10px 0;border-top:1px solid var(--line)}
+.note{font-size:13.5px;color:var(--ink-2);margin:0;font-style:italic}
+.link{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:8px;font:500 15px/1 var(--sans);color:var(--ink)}
+.link svg{width:16px;height:16px;transition:transform .3s var(--ease)}.link:hover svg{transform:translateX(4px)}
+.meta-row{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center;margin-top:clamp(40px,5vw,64px);padding-top:24px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+details.acc{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:48px}
+details.acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:26px 0;font:400 clamp(22px,2.2vw,28px)/1.2 var(--serif)}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc summary svg{width:22px;height:22px;transition:transform .4s var(--ease)}details.acc[open] summary svg{transform:rotate(45deg)}
+.acc-grid{display:grid;gap:28px 48px;padding:4px 0 40px}
+@media (min-width:760px){.acc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.acc-grid h4{margin:0 0 6px;font:600 13px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase}
+.acc-grid p{margin:0;color:var(--ink-2);font-size:15px}
+ol.rules{margin:0;padding:4px 0 40px 1.2em;columns:1;column-gap:56px;color:var(--ink-2);font-size:15px}
+ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
+@media (min-width:900px){ol.rules{columns:2}}
+
+/* cabins */
+.cabins{background:var(--surface)}
+.picker{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--pad)*-1) 28px;padding:0 var(--pad)}
+.picker::-webkit-scrollbar{display:none}
+.picker button{flex:none;padding:10px 0;margin-right:26px;font:300 clamp(24px,2.6vw,34px)/1.1 var(--serif);color:rgba(20,26,19,.38);letter-spacing:-.01em;transition:color .3s;position:relative}
+.picker button:hover{color:var(--ink-2)}
+.picker button[aria-selected="true"]{color:var(--ink)}
+.picker button[aria-selected="true"]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink)}
+@media (min-width:900px){.picker{margin:0 0 36px;padding:0}}
+.cabin{display:grid;gap:28px}
+@media (min-width:1024px){.cabin{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:64px;align-items:start}}
+.gal{position:relative;border-radius:var(--r);overflow:hidden;background:#d9d4c8}
+.gal-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:4/3}
+.gal-track::-webkit-scrollbar{display:none}
+.gal-track img{flex:none;width:100%;height:100%;object-fit:cover;scroll-snap-align:center}
+.gal-nav{position:absolute;bottom:16px;right:16px;display:flex;gap:8px}
+.gal-nav button{width:44px;height:44px;border-radius:50%;background:rgba(245,243,238,.9);backdrop-filter:blur(8px);display:grid;place-items:center;transition:background .3s}
+.gal-nav button:hover{background:#fff}.gal-nav svg{width:18px;height:18px}
+.dots{position:absolute;bottom:30px;left:20px;display:flex;gap:6px}
+.dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.5);transition:all .3s}.dots i.on{background:#fff;width:18px;border-radius:3px}
+.cabin-info{display:flex;flex-direction:column;gap:22px}
+.cabin-info h3{margin:0;font:300 clamp(52px,6vw,88px)/.95 var(--serif);letter-spacing:-.035em}
+.cabin-price{display:flex;align-items:baseline;gap:10px;font:400 30px/1 var(--serif)}.cabin-price small{font:400 14px/1.3 var(--sans);color:var(--ink-2)}
+.cabin-info .btn{align-self:flex-start;margin-top:6px}
+.includes{display:grid;gap:32px;margin-top:clamp(56px,7vw,96px)}
+@media (min-width:900px){.includes{grid-template-columns:1fr 1fr 1fr}}
+.includes h4{margin:0 0 14px;font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
+.includes p{margin:0;font:400 22px/1.35 var(--serif)}
+.rom{display:grid;gap:28px}
+@media (min-width:900px){.rom{grid-template-columns:1fr 1fr;gap:40px}}
+.rom .pkg-img{aspect-ratio:4/3}
+
+/* menu */
+.menu{background:var(--deep);color:var(--on-dark)}
+.menu .eyebrow,.menu .lead{color:var(--on-dark-2)}
+.menu .seg button{color:var(--on-dark-2);border-color:var(--line-dark)}.menu .seg button:hover{color:var(--on-dark);border-color:rgba(242,239,231,.35)}
+.menu .seg button[aria-pressed="true"]{background:var(--on-dark);color:var(--ink);border-color:var(--on-dark)}
+.menu-grid{display:grid;gap:48px}
+@media (min-width:1024px){.menu-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:80px}}
+.menu-aside{display:none}
+@media (min-width:1024px){.menu-aside{display:grid;gap:16px;position:sticky;top:96px;align-self:start}.menu-aside img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r)}.menu-aside img:first-child{aspect-ratio:4/5}}
+.menu-cols{columns:1;column-gap:64px}
+@media (min-width:760px){.menu-cols{columns:2}}
+.mcat{break-inside:avoid;margin:0 0 48px}
+.mcat h3{margin:0 0 6px;font:400 28px/1.1 var(--serif);letter-spacing:-.01em}
+.mcat>p{margin:0 0 12px;font-size:14px;color:var(--on-dark-2);font-style:italic}
+.mi{padding:12px 0;border-top:1px solid var(--line-dark)}
+.mi-row{display:flex;justify-content:space-between;gap:16px;font-size:15.5px;font-weight:500}
+.mi-row span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.mi p{margin:4px 0 0;font-size:14px;line-height:1.5;color:var(--on-dark-2)}
+.mi .ask{color:var(--on-dark-2);font-weight:400}
+
+/* gallery */
+.masonry{columns:2;column-gap:12px}
+@media (min-width:760px){.masonry{columns:3;column-gap:16px}}
+@media (min-width:1200px){.masonry{columns:4}}
+.masonry button{display:block;width:100%;margin:0 0 12px;border-radius:14px;overflow:hidden;break-inside:avoid;background:var(--surface)}
+@media (min-width:760px){.masonry button{margin-bottom:16px}}
+.masonry img{width:100%;height:auto;transition:transform 1s var(--ease),opacity .6s}
+.masonry button:hover img{transform:scale(1.035)}
+.lb{position:fixed;inset:0;z-index:70;background:rgba(8,12,7,.96);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.lb.open{opacity:1;visibility:visible}
+.lb img{max-width:92vw;max-height:80vh;border-radius:8px;object-fit:contain;transition:opacity .25s}
+.lb-btn{position:absolute;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;background:rgba(255,255,255,.1);transition:background .3s}
+.lb-btn:hover{background:rgba(255,255,255,.2)}.lb-btn svg{width:20px;height:20px}
+.lb-close{top:calc(16px + env(safe-area-inset-top));right:16px}
+.lb-prev{left:16px;top:50%;translate:0 -50%}.lb-next{right:16px;top:50%;translate:0 -50%}
+.lb-cap{position:absolute;bottom:calc(20px + env(safe-area-inset-bottom));left:0;right:0;text-align:center;color:rgba(255,255,255,.75);font-size:14px}
+@media (max-width:640px){.lb-prev,.lb-next{top:auto;bottom:calc(56px + env(safe-area-inset-bottom));translate:none}}
+
+/* contact */
+.contact .wrap{display:grid;gap:56px}
+@media (min-width:1024px){.contact .wrap{grid-template-columns:1fr 1.1fr;gap:96px}}
+.clist{list-style:none;margin:40px 0 0;padding:0}
+.clist li{padding:20px 0;border-top:1px solid var(--line);display:grid;gap:6px}
+.clist li:last-child{border-bottom:1px solid var(--line)}
+.clist .eyebrow{font-size:11px}
+.clist a,.clist span{font:400 clamp(22px,2vw,26px)/1.3 var(--serif)}
+.map{position:relative;border-radius:var(--r);overflow:hidden;background:var(--surface);aspect-ratio:4/5}
+@media (min-width:640px){.map{aspect-ratio:4/3}}
+@media (min-width:1024px){.map{aspect-ratio:auto;min-height:560px;height:100%}}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.02)}
+.map .btn{position:absolute;left:16px;bottom:16px;z-index:2;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+
+/* footer */
+.ftr{background:var(--deep);color:var(--on-dark-2);padding:72px 0 calc(110px + env(safe-area-inset-bottom));font-size:14px}
+.ftr .wrap{display:grid;gap:40px}
+.ftr img{height:84px;width:auto}
+.ftr nav{display:flex;flex-wrap:wrap;gap:12px 28px;color:var(--on-dark)}
+.ftr-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid var(--line-dark)}
+@media (min-width:900px){.ftr .wrap{grid-template-columns:1fr auto;align-items:end}.ftr-bottom{grid-column:1/-1}}
+
+/* floating */
+.fab{position:fixed;z-index:55;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:10px}
+@media (min-width:900px){.fab{right:28px;bottom:28px}}
+.fab a{position:relative;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:rgba(20,26,19,.78);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 10px 30px rgba(0,0,0,.22),inset 0 0 0 1px rgba(255,255,255,.12);transition:transform .4s var(--ease),background .3s;animation:fabIn .9s var(--ease) both}
+.fab a:nth-child(2){animation-delay:.12s}
+.fab a:hover{transform:translateY(-2px);background:rgba(20,26,19,.92)}
+.fab a.wa{background:#1f7a46}.fab a.wa:hover{background:#1b6b3d}
+.fab img{width:24px;height:24px}
+.fab span{position:absolute;right:64px;top:50%;translate:0 -50%;white-space:nowrap;background:var(--ink);color:var(--on-dark);font:500 13px/1 var(--sans);padding:10px 14px;border-radius:999px;opacity:0;pointer-events:none;transform:translateX(6px);transition:opacity .25s,transform .25s var(--ease)}
+@media (hover:hover){.fab a:hover span,.fab a:focus-visible span{opacity:1;transform:none}}
+@keyframes fabIn{from{opacity:0;transform:translateY(12px) scale(.9)}}
+</style>
+</head>
+<body>
+<header class="hdr" id="hdr">
+<div class="wrap">
+<a class="brand" href="#top" aria-label="Sima del Cielo — inicio"><img class="w" src="templates/sima-del-cielo/public/brand/logo-white.png" alt="Sima del Cielo" width="865" height="721"><img class="g" src="templates/sima-del-cielo/public/brand/logo-green.png" alt="" width="865" height="721"></a>
+<nav class="nav" aria-label="Principal"><a href="#paquetes">Paquetes</a><a href="#cabanas">Cabañas</a><a href="#menu">Menú</a><a href="#contacto">Contacto</a></nav>
+<button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="sheet"><i data-lucide="menu"></i></button>
+</div>
+</header>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Menú">
+<div class="sheet-top"><img src="templates/sima-del-cielo/public/brand/logo-white.png" alt="Sima del Cielo" style="height:48px;width:auto"><button class="burger" id="sheetClose" aria-label="Cerrar menú"><i data-lucide="x"></i></button></div>
+<nav><a href="#paquetes">Paquetes</a><a href="#cabanas">Cabañas</a><a href="#menu">Menú</a><a href="#contacto">Contacto</a></nav>
+<div class="sheet-foot"><a data-wa href="#">WhatsApp · <span data-phone></span></a><a data-ig href="#" target="_blank" rel="noopener"></a></div>
+</div>
+
+<main id="top">
+<section class="hero" aria-label="Sima del Cielo">
+<div class="hero-media" id="heroMedia"><video autoplay muted loop playsinline preload="auto" poster="templates/sima-del-cielo/public/media/video/hero-poster.jpg" aria-hidden="true"><source src="templates/sima-del-cielo/public/media/video/hero.mp4" type="video/mp4"></video></div>
+<div class="hero-body"><div class="wrap">
+<div class="eyebrow">San Fernando, Chiapas</div>
+<h1>Sima del Cielo<em>Aventura Zoque</em></h1>
+<div class="hero-cta"><a class="btn btn-light" href="#paquetes">Ver paquetes</a><a class="btn btn-ghost-light" data-wa href="#" target="_blank" rel="noopener">Escríbenos</a></div>
+</div></div>
+<div class="scrollcue" aria-hidden="true">Descubre<i></i></div>
+</section>
+
+<section class="intro" aria-label="Sobre Sima del Cielo">
+<div class="wrap">
+<div class="reveal"><div class="eyebrow">Parque ecoturístico</div><p class="big" id="summary"></p></div>
+<div class="aperture"><img src="templates/sima-del-cielo/public/media/packages/rappel-2.jpg" alt="Descenso a rappel en el interior de la sima" width="934" height="1200" loading="lazy" decoding="async"></div>
+</div>
+</section>
+
+<section class="sec" id="paquetes">
+<div class="wrap">
+<div class="sec-head reveal">
+<div><div class="eyebrow">Experiencias</div><h2 class="h2">Paquetes</h2></div>
+<p class="lead" id="pkgIntro"></p>
+</div>
+<div class="seg reveal" id="pkgFilter" role="group" aria-label="Filtrar paquetes" style="margin-bottom:36px"></div>
+<div class="rail" id="pkgList"></div>
+<div class="meta-row"><span data-prices-note></span><a class="link" data-wa href="#" target="_blank" rel="noopener">Reservaciones por WhatsApp <i data-lucide="arrow-right"></i></a></div>
+<details class="acc"><summary>Recomendaciones para tu visita <i data-lucide="plus"></i></summary><div class="acc-grid" id="recos"></div></details>
+</div>
+</section>
+
+<section class="sec cabins" id="cabanas">
+<div class="wrap">
+<div class="sec-head reveal">
+<div><div class="eyebrow">Hospedaje</div><h2 class="h2">Cabañas</h2></div>
+<div class="seg" id="cabTabs" role="group" aria-label="Categoría"><button aria-pressed="true" data-tab="cabana">Cabañas</button><button aria-pressed="false" data-tab="romantico">Románticos</button></div>
+</div>
+<div id="tab-cabana">
+<div class="picker" id="picker" role="tablist" aria-label="Elige una cabaña"></div>
+<div id="cabinView"></div>
+<div class="includes reveal">
+<div><h4>Todas las tarifas incluyen</h4><p id="stayIncludes"></p></div>
+<div><h4>Horarios</h4><p id="stayHours"></p></div>
+<div><h4>Persona extra</h4><p id="stayExtra"></p></div>
+</div>
+<details class="acc"><summary>Reglamento de cabañas <i data-lucide="plus"></i></summary><ol class="rules" id="rules"></ol></details>
+</div>
+<div id="tab-romantico" hidden>
+<p class="lead" style="margin-bottom:40px">Decoración romántica para tu cabaña. No incluye noche de hospedaje.</p>
+<div class="rom" id="romList"></div>
+</div>
+</div>
+</section>
+
+<section class="sec menu" id="menu">
+<div class="wrap">
+<div class="sec-head reveal">
+<div><div class="eyebrow">Restaurante</div><h2 class="h2">Menú</h2></div>
+<div class="seg" id="menuTabs" role="group" aria-label="Sección del menú"></div>
+</div>
+<div class="menu-grid">
+<div class="menu-aside"><img src="templates/sima-del-cielo/public/media/packages/senderos-am-2.jpg" alt="Chilaquiles con huevo" loading="lazy" width="501" height="502" style="aspect-ratio:4/5"><img src="templates/sima-del-cielo/public/media/packages/senderos-pm-2.jpg" alt="Cochito horneado" loading="lazy" width="513" height="514"></div>
+<div class="menu-cols" id="menuCols"></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="galeria">
+<div class="wrap">
+<div class="sec-head reveal"><div><div class="eyebrow">Galería</div><h2 class="h2">Sima del Cielo</h2></div></div>
+<div class="masonry" id="gallery"></div>
+</div>
+</section>
+
+<section class="sec contact" id="contacto" style="padding-top:0">
+<div class="wrap">
+<div class="reveal">
+<div class="eyebrow">Contacto</div><h2 class="h2">Visítanos</h2>
+<ul class="clist" id="clist"></ul>
+</div>
+<div class="map reveal"><iframe id="mapFrame" title="Ubicación de Sima del Cielo en Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a class="btn btn-dark" id="mapLink" target="_blank" rel="noopener"><i data-lucide="map-pin"></i>Abrir en Google Maps</a></div>
+</div>
+</section>
+</main>
+
+<footer class="ftr">
+<div class="wrap">
+<img src="templates/sima-del-cielo/public/brand/logo-white.png" alt="Sima del Cielo · Aventura Zoque" width="865" height="721" loading="lazy">
+<nav aria-label="Pie de página"><a href="#paquetes">Paquetes</a><a href="#cabanas">Cabañas</a><a href="#menu">Menú</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a></nav>
+<div class="ftr-bottom"><span>© <span id="yr"></span> Sima del Cielo · San Fernando, Chiapas</span><span data-prices-note></span></div>
+</div>
+</footer>
+
+<div class="fab" aria-label="Contacto rápido">
+<a class="wa" data-wa href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><img src="https://cdn.simpleicons.org/whatsapp/ffffff" alt="" width="24" height="24"><span>Escríbenos por WhatsApp</span></a>
+<a data-ig href="#" target="_blank" rel="noopener" aria-label="Síguenos en Instagram"><img src="https://cdn.simpleicons.org/instagram/ffffff" alt="" width="24" height="24"><span>Síguenos en Instagram</span></a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galería">
+<img id="lbImg" alt="">
+<button class="lb-btn lb-close" id="lbClose" aria-label="Cerrar"><i data-lucide="x"></i></button>
+<button class="lb-btn lb-prev" id="lbPrev" aria-label="Anterior"><i data-lucide="chevron-left"></i></button>
+<button class="lb-btn lb-next" id="lbNext" aria-label="Siguiente"><i data-lucide="chevron-right"></i></button>
+<div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script>
+(async()=>{
+const ROOT='templates/sima-del-cielo/', PUB=ROOT+'public';
+const get=p=>fetch(ROOT+'src/'+p).then(r=>r.json());
+const [site,packages,cabins,experiences,menu,gallery]=await Promise.all(['content/site.json','data/packages.json','data/cabins.json','data/cabin-experiences.json','data/menu.json','data/gallery.json'].map(get));
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const src=p=>PUB+p;
+const fmt=n=>'$'+n.toLocaleString('es-MX');
+const UNIT={person:'por persona',group:g=>`por ${g} personas`,night:g=>`por noche · ${g} personas`,session:g=>`por sesión · hasta ${g} personas`,experience:'por experiencia'};
+const unit=p=>{const u=UNIT[p.unit];return typeof u==='function'?u(p.guests):u};
+const SCHED={am:'a.m.',pm:'p.m.'};
+const wa=(msg=site.contact.whatsapp.message)=>`https://wa.me/${site.contact.whatsapp.number}?text=${encodeURIComponent(msg)}`;
+const icon=n=>`<i data-lucide="${n}"></i>`;
+
+$$('[data-wa]').forEach(a=>a.href=wa());
+$$('[data-ig]').forEach(a=>{a.href=site.social.instagram.url;if(!a.textContent.trim())a.textContent='Instagram · '+site.social.instagram.handle});
+$$('[data-phone]').forEach(e=>e.textContent=site.contact.phoneDisplay);
+$$('[data-prices-note]').forEach(e=>e.textContent=site.business.pricesNote);
+$('#yr').textContent=new Date().getFullYear();
+$('#summary').innerHTML=esc(site.business.summary).replace('Sima del Cielo','<em>Sima del Cielo</em>');
+$('#pkgIntro').textContent=site.business.packagesIntro;
+
+// packages
+const FILTERS=[['all','Todos',()=>true],['aventura','Aventura',p=>p.category==='aventura'&&!p.tags.includes('romantico')],['romantico','Románticos',p=>p.tags.includes('romantico')],['sesion-fotos','Sesión de fotos',p=>p.category==='sesion-fotos']];
+const pkgCard=p=>{const img=p.images[0];const title=p.name+(p.schedule?' '+SCHED[p.schedule]:'');return `<article class="pkg reveal">
+<div class="pkg-img"><img src="${src(img.src)}" alt="${esc(img.alt)}" width="${img.width}" height="${img.height}" loading="lazy" decoding="async">${p.schedule?`<span class="chip">${SCHED[p.schedule]}</span>`:''}${p.tags.includes('romantico')?'<span class="chip r">Romántico</span>':''}</div>
+<div class="pkg-body"><div class="pkg-top"><h3>${esc(p.name)}</h3><div class="price">${fmt(p.price.amount)}<small>${unit(p.price)}</small></div></div>
+<ul class="list">${p.includes.map(i=>`<li>${esc(i)}</li>`).join('')}</ul>${p.notes.map(n=>`<p class="note">${esc(n)}</p>`).join('')}
+<a class="link" href="${wa(`Hola, me interesa el paquete ${title}.`)}" target="_blank" rel="noopener">Consultar disponibilidad ${icon('arrow-right')}</a></div></article>`};
+const drawPkgs=f=>{$('#pkgList').innerHTML=packages.filter(FILTERS.find(x=>x[0]===f)[2]).map(pkgCard).join('');$('#pkgList').scrollLeft=0;hydrate($('#pkgList'))};
+$('#pkgFilter').innerHTML=FILTERS.map(([k,l],i)=>`<button data-f="${k}" aria-pressed="${i===0}">${l}</button>`).join('');
+$('#pkgFilter').onclick=e=>{const b=e.target.closest('button');if(!b)return;$$('#pkgFilter button').forEach(x=>x.setAttribute('aria-pressed',x===b));drawPkgs(b.dataset.f)};
+$('#recos').innerHTML=site.visit.recommendations.map(r=>`<div><h4>${esc(r.title)}</h4><p>${esc(r.text)}</p></div>`).join('');
+
+// cabins
+const cabinView=c=>`<div class="cabin">
+<div class="gal"><div class="gal-track" tabindex="0" aria-label="Fotografías de ${esc(c.name)}">${c.images.map((m,i)=>`<img src="${src(m.src)}" alt="${esc(m.alt)}" width="${m.width}" height="${m.height}" ${i?'loading="lazy"':''} decoding="async">`).join('')}</div>
+<div class="dots">${c.images.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>
+<div class="gal-nav"><button data-dir="-1" aria-label="Foto anterior">${icon('chevron-left')}</button><button data-dir="1" aria-label="Foto siguiente">${icon('chevron-right')}</button></div></div>
+<div class="cabin-info"><div class="eyebrow">Cabaña</div><h3>${esc(c.name)}</h3>
+<div class="cabin-price">${fmt(c.price.amount)}<small>MXN ${unit(c.price)}</small></div>
+<ul class="list">${c.features.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>
+<a class="btn btn-dark" href="${wa(`Hola, me interesa hospedarme en la cabaña ${c.name}.`)}" target="_blank" rel="noopener">Consultar disponibilidad</a></div></div>`;
+const showCabin=i=>{$$('#picker button').forEach((b,j)=>b.setAttribute('aria-selected',i===j));const v=$('#cabinView');v.innerHTML=cabinView(cabins[i]);lucide.createIcons();const t=v.querySelector('.gal-track'),dots=[...v.querySelectorAll('.dots i')];
+v.querySelectorAll('.gal-nav button').forEach(b=>b.onclick=()=>t.scrollBy({left:t.clientWidth*+b.dataset.dir,behavior:'smooth'}));
+t.addEventListener('scroll',()=>{const k=Math.round(t.scrollLeft/t.clientWidth);dots.forEach((d,j)=>d.classList.toggle('on',j===k))},{passive:true});
+v.animate([{opacity:0,transform:'translateY(12px)'},{opacity:1,transform:'none'}],{duration:600,easing:'cubic-bezier(.2,.7,.2,1)'})};
+$('#picker').innerHTML=cabins.map((c,i)=>`<button role="tab" aria-selected="${i===0}" data-i="${i}">${esc(c.name)}</button>`).join('');
+$('#picker').onclick=e=>{const b=e.target.closest('button');if(b)showCabin(+b.dataset.i)};
+showCabin(0);
+$('#stayIncludes').textContent=site.stay.includes.join(' · ');
+$('#stayHours').textContent=`Check-in a partir de las ${site.stay.checkIn} · Check-out a las ${site.stay.checkOut}`;
+$('#stayExtra').textContent=`${fmt(site.stay.extraGuestFee.amount)} MXN por persona`;
+$('#rules').innerHTML=site.stay.rules.map(r=>`<li>${esc(r)}</li>`).join('');
+$('#romList').innerHTML=experiences.map(x=>{const m=x.images[0];return `<article class="pkg"><div class="pkg-img"><img src="${src(m.src)}" alt="${esc(m.alt)}" width="${m.width}" height="${m.height}" loading="lazy"><span class="chip">Romántico</span></div>
+<div class="pkg-body"><div class="pkg-top"><h3>${esc(x.name)}</h3><div class="price">${fmt(x.price.amount)}<small>${unit(x.price)}</small></div></div><ul class="list">${x.includes.map(i=>`<li>${esc(i)}</li>`).join('')}</ul>${x.notes.map(n=>`<p class="note">${esc(n)}</p>`).join('')}
+<a class="link" href="${wa(`Hola, me interesa la decoración romántica: ${x.name}.`)}" target="_blank" rel="noopener">Consultar ${icon('arrow-right')}</a></div></article>`}).join('');
+$('#cabTabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;$$('#cabTabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));$('#tab-cabana').hidden=b.dataset.tab!=='cabana';$('#tab-romantico').hidden=b.dataset.tab!=='romantico'};
+
+// menu
+const price=it=>it.variants?it.variants.map(v=>`${v.label} ${fmt(v.price)}`).join(' · '):it.price!=null?fmt(it.price):'<span class="ask">Consultar</span>';
+const drawMenu=g=>{$('#menuCols').innerHTML=menu.categories.filter(c=>c.group===g).map(c=>`<div class="mcat"><h3>${esc(c.name)}</h3>${c.description?`<p>${esc(c.description)}</p>`:''}${c.items.map(it=>`<div class="mi"><div class="mi-row"><span>${esc(it.name)}</span><span>${price(it)}</span></div>${it.description?`<p>${esc(it.description)}</p>`:''}${it.addons?`<p>Extra: ${it.addons.map(a=>`${esc(a.label)} ${fmt(a.price)}`).join(' · ')}</p>`:''}</div>`).join('')}</div>`).join('')};
+$('#menuTabs').innerHTML=menu.groups.map((g,i)=>`<button data-g="${g.id}" aria-pressed="${i===0}">${esc(g.name)}</button>`).join('');
+$('#menuTabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;$$('#menuTabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));drawMenu(b.dataset.g)};
+drawMenu(menu.groups[0].id);
+
+// gallery + lightbox
+$('#gallery').innerHTML=gallery.map((g,i)=>`<button data-i="${i}" aria-label="Ampliar: ${esc(g.alt)}"><img src="${src(g.src)}" alt="${esc(g.alt)}" width="${g.width}" height="${g.height}" loading="lazy" decoding="async"></button>`).join('');
+let cur=0;const lb=$('#lb'),lbImg=$('#lbImg');let lastFocus;
+const lbShow=i=>{cur=(i+gallery.length)%gallery.length;const g=gallery[cur];lbImg.style.opacity=0;const n=new Image();n.onload=()=>{lbImg.src=n.src;lbImg.alt=g.alt;lbImg.style.opacity=1};n.src=src(g.src);$('#lbCap').textContent=`${g.alt} — ${cur+1} / ${gallery.length}`};
+const lbOpen=i=>{lastFocus=document.activeElement;lbShow(i);lb.classList.add('open');document.body.style.overflow='hidden';$('#lbClose').focus()};
+const lbClose=()=>{lb.classList.remove('open');document.body.style.overflow='';lastFocus&&lastFocus.focus()};
+$('#gallery').onclick=e=>{const b=e.target.closest('button');if(b)lbOpen(+b.dataset.i)};
+$('#lbClose').onclick=lbClose;$('#lbPrev').onclick=()=>lbShow(cur-1);$('#lbNext').onclick=()=>lbShow(cur+1);
+lb.onclick=e=>{if(e.target===lb)lbClose()};
+let tx=0;lb.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)lbShow(cur+(d<0?1:-1))});
+document.addEventListener('keydown',e=>{if(lb.classList.contains('open')){if(e.key==='Escape')lbClose();if(e.key==='ArrowRight')lbShow(cur+1);if(e.key==='ArrowLeft')lbShow(cur-1)}else if(e.key==='Escape')closeSheet()});
+
+// contact
+const L=site.location,addr=`${L.addressLine}, ${L.postalCode} ${L.locality}, ${L.region}`;
+$('#clist').innerHTML=[
+['WhatsApp',`<a href="${wa()}" target="_blank" rel="noopener">${site.contact.phoneDisplay}</a>`],
+['Teléfono',`<a href="tel:${site.contact.phoneE164}">${site.contact.phoneDisplay}</a>`],
+['Instagram',`<a href="${site.social.instagram.url}" target="_blank" rel="noopener">${site.social.instagram.handle}</a>`],
+...(site.contact.email?[['Correo',`<a href="mailto:${esc(site.contact.email)}">${esc(site.contact.email)}</a>`]]:[]),
+['Dirección',`<span>${esc(addr)}</span>`],
+['Cabañas',`<span>Check-in ${site.stay.checkIn} · Check-out ${site.stay.checkOut}</span>`],
+...(site.hours?[['Horario',`<span>${esc(site.hours)}</span>`]]:[])
+].map(([k,v])=>`<li><span class="eyebrow">${k}</span>${v}</li>`).join('');
+$('#mapFrame').src=L.embedUrl;$('#mapLink').href=L.mapsUrl;
+
+// header + sheet
+const hdr=$('#hdr'),hero=$('.hero');
+new IntersectionObserver(([e])=>hdr.classList.toggle('solid',!e.isIntersecting),{rootMargin:'-68px 0px 0px 0px'}).observe(hero);
+const sheet=$('#sheet');
+const openSheet=()=>{sheet.classList.add('open');$('#burger').setAttribute('aria-expanded','true');document.body.style.overflow='hidden';$('#sheetClose').focus()};
+function closeSheet(){if(!sheet.classList.contains('open'))return;sheet.classList.remove('open');$('#burger').setAttribute('aria-expanded','false');document.body.style.overflow=''}
+$('#burger').onclick=openSheet;$('#sheetClose').onclick=closeSheet;sheet.querySelectorAll('nav a').forEach(a=>a.onclick=closeSheet);
+
+// hero video: ya está en el HTML, sólo se pausa fuera de pantalla
+const heroVideo=document.querySelector('#heroMedia video');
+if(heroVideo)new IntersectionObserver(([e])=>e.isIntersecting?heroVideo.play().catch(()=>{}):heroVideo.pause()).observe(hero);
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+function hydrate(root=document){root.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el));lucide.createIcons()}
+drawPkgs('all');hydrate();
+})();
+</script>
+</body>
+</html>

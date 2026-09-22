@@ -1,0 +1,88 @@
+{
+  "business": {
+    "name": "Sima del Cielo",
+    "tagline": "Aventura Zoque",
+    "summary": "Sima del Cielo es un parque ecoturístico en San Fernando, Chiapas, rodeado de naturaleza y tranquilidad. Contamos con seis cabañas ideales para el descanso, además de experiencias como rappel, senderismo y restaurante, lo que lo convierte en un espacio perfecto para disfrutar, desconectarse y vivir una experiencia única.",
+    "packagesIntro": "En Sima del Cielo vivimos una experiencia única de naturaleza y aventura. Disfruta del impresionante descenso a la sima en rappel, senderismo entre paisajes naturales, recorridos guiados, áreas para descansar, restaurante con gastronomía regional y acogedoras cabañas para una estancia inolvidable.",
+    "pricesNote": "Precios vigentes nov. 2026"
+  },
+  "seo": {
+    "siteUrl": "https://simadelcielochiapas.com",
+    "title": "Sima del Cielo · Aventura Zoque — Cabañas, rappel y restaurante en San Fernando, Chiapas",
+    "description": "Parque ecoturístico en San Fernando, Chiapas. Seis cabañas, descenso a rappel a la sima, senderismo y restaurante de cocina regional.",
+    "ogImage": "/media/packages/explorador-am-1.jpg",
+    "locale": "es_MX"
+  },
+  "contact": {
+    "phoneE164": "+529614590262",
+    "phoneDisplay": "961 459 0262",
+    "email": "simadelcielo.chiapas@gmail.com",
+    "whatsapp": {
+      "number": "529614590262",
+      "message": "Hola, me gustaría recibir información sobre Sima del Cielo."
+    }
+  },
+  "social": {
+    "instagram": {
+      "handle": "@sima.delcielo.chiapas",
+      "url": "https://www.instagram.com/sima.delcielo.chiapas/"
+    }
+  },
+  "location": {
+    "addressLine": "Carretera Tuxtla–Chicoasén km 20.5, Col. Juárez",
+    "locality": "San Fernando",
+    "region": "Chiapas",
+    "postalCode": "29120",
+    "country": "MX",
+    "coordinates": null,
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sima%20del%20Cielo%20Chiapas%20San%20Fernando",
+    "embedUrl": "https://www.google.com/maps?q=Sima%20del%20Cielo%20Chiapas%20San%20Fernando&output=embed",
+    "verified": false
+  },
+  "hours": null,
+  "hero": {
+    "poster": { "src": "/media/packages/explorador-am-1.jpg", "alt": "Luz del sol entrando al interior de la Sima del Cielo", "width": 934, "height": 1200 },
+    "video": { "sources": [{ "src": "/media/video/hero.mp4", "type": "video/mp4" }] }
+  },
+  "intro": {
+    "image": { "src": "/media/packages/rappel-2.jpg", "alt": "Descenso a rappel en el interior de la sima", "width": 934, "height": 1200 }
+  },
+  "stay": {
+    "checkIn": "3:00 p.m.",
+    "checkOut": "12:00 p.m.",
+    "extraGuestFee": { "amount": 140, "currency": "MXN" },
+    "includes": [
+      "Acceso al parque",
+      "Recorrido por los senderos hasta el mirador de la sima",
+      "1 noche de hospedaje para 2 personas",
+      "Aire acondicionado e internet"
+    ],
+    "rules": [
+      "Check-in: a partir de las 3:00 p.m.",
+      "Check-out: a las 12:00 p.m. Cualquier salida fuera de este horario podrá generar cargo adicional, sujeto a disponibilidad.",
+      "Las cabañas, mobiliario, blancos y equipamiento deben usarse de manera responsable; cualquier daño, ruptura o pérdida generará un cargo adicional conforme al daño ocasionado.",
+      "En caso de que al finalizar la estancia falte algún objeto, se aplicará el cargo correspondiente.",
+      "No está permitido fumar dentro de las cabañas; el incumplimiento generará un cargo por limpieza profunda.",
+      "No se permite el ingreso de mascotas, sin excepción.",
+      "Se debe respetar el descanso de los demás huéspedes; no se permite ruido excesivo o música alta, especialmente por la noche.",
+      "No está permitido introducir fogatas, velas, parrillas u objetos que representen riesgo de incendio dentro de las cabañas.",
+      "No mover muebles ni equipo de las cabañas sin autorización del personal.",
+      "La cabaña solo podrá ser ocupada por el número de personas registradas al momento de la reservación.",
+      "Persona extra: tiene un costo adicional de $140 MXN por persona.",
+      "No se permite el ingreso de visitantes externos sin previa autorización.",
+      "Se solicita cuidar las áreas naturales, vegetación y fauna del lugar, así como depositar la basura en los espacios asignados.",
+      "El huésped es responsable de su seguridad y la de sus acompañantes durante su estancia.",
+      "Sima del Cielo no se hace responsable por objetos de valor olvidados o extraviados."
+    ]
+  },
+  "visit": {
+    "recommendations": [
+      { "title": "Puntualidad", "text": "Para comenzar con las actividades en tiempo y forma." },
+      { "title": "Ropa cómoda", "text": "Ideal para actividades físicas; en temporada de lluvia, de ser posible, llevar ropa extra." },
+      { "title": "Calzado", "text": "Con el que puedan caminar una distancia considerable, cómodo y que pueda ensuciarse." },
+      { "title": "Hidratación", "text": "Al menos 2 litros de agua." },
+      { "title": "Olores", "text": "Evitar el uso de perfumes y repelentes que contengan alquitrán; de preferencia bañarse con jabón neutro." },
+      { "title": "Con el guía", "text": "Seguir en todo momento sus indicaciones y no separarse del grupo. No correr ni gritar." }
+    ]
+  }
+}
