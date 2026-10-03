@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { ArrowRight } from 'lucide-vue-next'
+import { siInstagram } from 'simple-icons'
 import type { Media, Price } from '@/types/models'
+import BrandIcon from '@/components/ui/BrandIcon.vue'
 import ResponsiveImage from '@/components/ui/ResponsiveImage.vue'
 import { SCHEDULE_LABEL, formatMoney, formatPriceUnit } from '@/utils/format'
 import { whatsappLink } from '@/utils/whatsapp'
@@ -14,7 +16,7 @@ import { whatsappLink } from '@/utils/whatsapp'
  */
 type Offer = {
   name: string; price: Price; includes: string[]; notes: string[]; images: Media[]
-  schedule?: 'am' | 'pm' | null; tags?: string[]
+  schedule?: 'am' | 'pm' | null; tags?: string[]; reel?: string | null
 }
 const props = withDefaults(defineProps<{ item: Offer; ratio?: string; ctaLabel?: string; ctaMessage?: string; selectable?: boolean }>(), {
   ratio: '4/5',
@@ -46,8 +48,11 @@ const isRomantic = computed(() => props.item.tags?.includes('romantico'))
         <li v-for="line in item.includes" :key="line" class="border-t border-line py-2.5">{{ line }}</li>
       </ul>
       <p v-for="n in item.notes" :key="n" class="text-[13.5px] text-ink-2 italic">{{ n }}</p>
-      <button v-if="selectable" type="button" class="cta" @click="emit('select', item)">Seleccionar <ArrowRight :size="16" /></button>
-      <a v-else :href="cta" target="_blank" rel="noopener" class="cta">{{ ctaLabel }} <ArrowRight :size="16" class="transition-transform duration-300 group-hover:translate-x-1" /></a>
+      <div class="mt-auto flex flex-wrap items-center justify-between gap-x-5 gap-y-2 pt-1.5">
+        <button v-if="selectable" type="button" class="cta" @click="emit('select', item)">Seleccionar <ArrowRight :size="16" /></button>
+        <a v-else :href="cta" target="_blank" rel="noopener" class="cta">{{ ctaLabel }} <ArrowRight :size="16" class="transition-transform duration-300 group-hover:translate-x-1" /></a>
+        <a v-if="item.reel" :href="item.reel" target="_blank" rel="noopener" :aria-label="`Ver reel de ${fullName} en Instagram`" class="reel"><BrandIcon :icon="siInstagram" :size="15" /> Ver reel</a>
+      </div>
     </div>
   </article>
 </template>
@@ -55,5 +60,6 @@ const isRomantic = computed(() => props.item.tags?.includes('romantico'))
 <style scoped>
 @reference "@/assets/styles/main.css";
 .chip { @apply absolute top-3.5 inline-flex h-7 items-center rounded-full bg-bg/90 px-3 text-[11px] font-semibold tracking-[.12em] text-ink uppercase backdrop-blur-sm; }
-.cta { @apply mt-auto inline-flex items-center gap-2 pt-1.5 text-[15px] font-medium text-ink; }
+.cta { @apply inline-flex items-center gap-2 text-[15px] font-medium text-ink; }
+.reel { @apply inline-flex items-center gap-1.5 text-[14px] font-medium text-ink-2 transition-colors duration-300; }
 </style>

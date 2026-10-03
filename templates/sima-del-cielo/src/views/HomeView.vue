@@ -16,7 +16,7 @@ import BaseButton from '@/components/ui/BaseButton.vue'
     <div class="eyebrow !text-white/80">{{ site.location.locality }}, {{ site.location.region }}</div>
     <h1 class="font-serif text-[clamp(64px,13vw,196px)] leading-[.86] font-light tracking-[-.045em]">
       {{ site.business.name }}
-      <em class="mt-[.25em] block text-[.42em] tracking-[-.02em] text-white/88">{{ site.business.tagline }}</em>
+      <em class="mt-[.25em] block text-[.21em] tracking-[-.02em] text-white/88">{{ site.business.tagline }}</em>
     </h1>
     <!-- CTA: preparado para "Reservar" (Fase 2) sin cambiar el layout -->
     <div class="flex flex-wrap gap-3">

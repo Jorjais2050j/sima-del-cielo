@@ -37,6 +37,8 @@ export const PackageSchema = z.object({
   includes: z.array(z.string()),
   notes: z.array(z.string()),
   images: z.array(MediaSchema).min(1),
+  /** Reel de Instagram del paquete (opcional) */
+  reel: z.string().url().nullable().optional(),
 })
 
 export const CabinSchema = z.object({
