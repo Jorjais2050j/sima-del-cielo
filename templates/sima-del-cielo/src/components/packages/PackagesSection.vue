@@ -34,7 +34,7 @@ watch(filter, () => { expanded.value = false })
 <template>
   <section id="paquetes" class="py-[clamp(80px,10vw,160px)]">
     <div class="container-page">
-      <SectionTitle eyebrow="Experiencias" title="Paquetes">
+      <SectionTitle eyebrow="Experiencias" title="Paquetes" tone="selva">
         <Reveal><p class="max-w-[46ch] text-[clamp(17px,1.4vw,19px)] text-pretty text-ink-2">{{ site.business.packagesIntro }}</p></Reveal>
       </SectionTitle>
       <SegmentedControl v-model="filter" :options="FILTERS" label="Filtrar paquetes" class="mb-9" />

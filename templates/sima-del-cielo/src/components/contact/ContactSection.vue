@@ -19,7 +19,7 @@ const rows = computed(() => [
     <div class="container-page grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-24">
       <Reveal>
         <div class="eyebrow">Contacto</div>
-        <h2 class="mt-3.5 font-serif text-[clamp(44px,7vw,104px)] leading-[.95] font-light tracking-[-.03em]">Visítanos</h2>
+        <h2 class="section-title mt-3.5 text-barro">Visítanos</h2>
         <ul class="mt-10">
           <li v-for="r in rows" :key="r.label" class="grid gap-1.5 border-t border-line py-5 last:border-b">
             <span class="eyebrow text-[11px]">{{ r.label }}</span>

@@ -13,7 +13,7 @@ const openAt = ref<number | null>(null)
 <template>
   <section id="galeria" class="py-[clamp(80px,10vw,160px)]">
     <div class="container-page">
-      <SectionTitle eyebrow="Galería" title="Sima del Cielo" />
+      <SectionTitle eyebrow="Galería" title="Sima del Cielo" tone="cielo" />
       <!-- Masonry con CSS columns: sin JS de layout, sin CLS (width/height en cada imagen) -->
       <div class="columns-2 gap-3 md:columns-3 md:gap-4 xl:columns-4">
         <button

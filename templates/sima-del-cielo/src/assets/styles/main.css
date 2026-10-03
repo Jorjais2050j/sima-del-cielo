@@ -14,9 +14,18 @@
   --color-line-dark: rgb(242 239 231 / 0.14);
   --color-whatsapp: #1f7a46;
 
+  /* Colores de naturaleza para los títulos de sección (text-selva, text-madera…) */
+  --color-selva: #2f6b2a;  /* Paquetes: verde selva */
+  --color-madera: #8b4a22; /* Cabañas: madera */
+  --color-maiz: #f0a73a;   /* Restaurante: maíz/fogón, sobre fondo oscuro */
+  --color-cielo: #1f6e8c;  /* Sima del Cielo: cielo y agua */
+  --color-barro: #c4532c;  /* Visítanos: barro/atardecer */
+
   /* Todo el sitio va en Hanken Grotesk; para volver a la serif: "Newsreader", Georgia, serif */
   --font-serif: "Hanken Grotesk", system-ui, sans-serif;
   --font-sans: "Hanken Grotesk", system-ui, sans-serif;
+  /* Títulos de sección: brocha informal */
+  --font-display: "Knewave", "Hanken Grotesk", system-ui, sans-serif;
 
   --radius-card: 22px;
   --ease-premium: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -44,6 +53,10 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-ink-2);
+}
+@utility section-title {
+  font: 400 clamp(44px, 7vw, 104px)/1 var(--font-display);
+  letter-spacing: -0.005em;
 }
 @utility no-scrollbar {
   scrollbar-width: none;
