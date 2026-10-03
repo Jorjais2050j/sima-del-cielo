@@ -189,9 +189,9 @@
     "images": [
       {
         "src": "/media/packages/recorrido-1.jpg",
-        "alt": "Estanque y jardín dentro del parque",
-        "width": 938,
-        "height": 1200
+        "alt": "Pareja pescando en el estanque del parque",
+        "width": 648,
+        "height": 810
       },
       {
         "src": "/media/packages/recorrido-2.jpg",
@@ -320,9 +320,9 @@
     "images": [
       {
         "src": "/media/packages/foto-clasica-1.jpg",
-        "alt": "Sesión de fotos de XV años junto a las rocas",
-        "width": 476,
-        "height": 477
+        "alt": "Sesión de fotos con vestido blanco junto a las rocas",
+        "width": 460,
+        "height": 719
       },
       {
         "src": "/media/packages/foto-clasica-2.jpg",
@@ -358,14 +358,14 @@
       {
         "src": "/media/packages/foto-aventura-1.jpg",
         "alt": "Novia entre la vegetación de la sima",
-        "width": 458,
-        "height": 459
+        "width": 453,
+        "height": 803
       },
       {
         "src": "/media/packages/foto-aventura-2.jpg",
         "alt": "Vestido blanco en el fondo de la sima",
-        "width": 936,
-        "height": 1200
+        "width": 453,
+        "height": 803
       }
     ]
   }

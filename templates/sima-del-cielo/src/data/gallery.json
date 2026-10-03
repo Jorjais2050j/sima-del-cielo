@@ -52,8 +52,8 @@
     "category": "packages",
     "src": "/media/packages/foto-aventura-2.jpg",
     "alt": "Sesión de fotos en la sima",
-    "width": 936,
-    "height": 1200
+    "width": 453,
+    "height": 803
   },
   {
     "id": "gal-pura-vida-1",
@@ -83,9 +83,9 @@
     "id": "gal-recorrido-1",
     "category": "packages",
     "src": "/media/packages/recorrido-1.jpg",
-    "alt": "Jardín y estanque",
-    "width": 938,
-    "height": 1200
+    "alt": "Pesca en el estanque",
+    "width": 648,
+    "height": 810
   },
   {
     "id": "gal-explorador-pm-1",
