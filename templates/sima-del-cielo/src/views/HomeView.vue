@@ -24,7 +24,8 @@ import BaseButton from '@/components/ui/BaseButton.vue'
       <BaseButton :href="whatsappLink()" variant="ghost-light">Escríbenos</BaseButton>
     </div>
   </HeroVideo>
-  <IntroStatement eyebrow="Parque ecoturístico" :text="site.business.summary" :image="site.intro.image" />
+  <!-- Oculta a petición del cliente: cambiar v-if a true para volver a mostrarla -->
+  <IntroStatement v-if="false" eyebrow="Parque ecoturístico" :text="site.business.summary" :image="site.intro.image" />
   <PackagesSection />
   <CabinsSection />
   <MenuSection />

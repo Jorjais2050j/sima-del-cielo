@@ -21,7 +21,7 @@ const aside = [
 <template>
   <section id="menu" class="bg-deep py-[clamp(80px,10vw,160px)] text-on-dark">
     <div class="container-page">
-      <SectionTitle eyebrow="Restaurante" title="Menú" dark>
+      <SectionTitle title="Restaurante" dark>
         <SegmentedControl v-model="group" :options="groups" label="Sección del menú" dark />
       </SectionTitle>
       <div class="grid gap-12 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-20">

@@ -45,12 +45,17 @@ const stay = site.stay
         </AnimatePresence>
 
         <div class="mt-[clamp(56px,7vw,96px)] grid gap-8 md:grid-cols-3">
-          <div><h4 class="eyebrow mb-3.5">Todas las tarifas incluyen</h4><p class="font-serif text-[22px] leading-snug">{{ stay.includes.join(' · ') }}</p></div>
+          <div>
+            <h4 class="eyebrow mb-3.5">Todas las tarifas incluyen</h4>
+            <ul class="text-justify font-serif text-[19px] leading-snug hyphens-auto">
+              <li v-for="item in stay.includes" :key="item" class="border-t border-line py-2.5 last:border-b">{{ item }}</li>
+            </ul>
+          </div>
           <div><h4 class="eyebrow mb-3.5">Horarios</h4><p class="font-serif text-[22px] leading-snug">Check-in a partir de las {{ stay.checkIn }} · Check-out a las {{ stay.checkOut }}</p></div>
           <div><h4 class="eyebrow mb-3.5">Persona extra</h4><p class="font-serif text-[22px] leading-snug">{{ formatMoney(stay.extraGuestFee) }} MXN por persona</p></div>
         </div>
         <Accordion title="Reglamento de cabañas">
-          <ol class="list-decimal columns-1 gap-14 pl-5 text-[15px] text-ink-2 lg:columns-2">
+          <ol class="list-decimal columns-1 gap-14 pl-5 text-justify text-[15px] hyphens-auto text-ink-2 lg:columns-2">
             <li v-for="r in stay.rules" :key="r" class="break-inside-avoid pb-3 pl-1.5">{{ r }}</li>
           </ol>
         </Accordion>

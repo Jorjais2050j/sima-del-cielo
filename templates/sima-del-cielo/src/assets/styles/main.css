@@ -14,7 +14,8 @@
   --color-line-dark: rgb(242 239 231 / 0.14);
   --color-whatsapp: #1f7a46;
 
-  --font-serif: "Newsreader", Georgia, serif;
+  /* Todo el sitio va en Hanken Grotesk; para volver a la serif: "Newsreader", Georgia, serif */
+  --font-serif: "Hanken Grotesk", system-ui, sans-serif;
   --font-sans: "Hanken Grotesk", system-ui, sans-serif;
 
   --radius-card: 22px;
@@ -25,6 +26,8 @@
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body { @apply bg-bg text-ink font-sans antialiased; }
   section[id] { scroll-margin-top: 72px; }
+  /* Párrafos justificados; el guionado (lang="es") evita huecos grandes en columnas angostas */
+  p { text-align: justify; hyphens: auto; }
   a:hover { color: var(--color-forest); }
   :focus-visible { outline: 2px solid var(--color-forest); outline-offset: 3px; border-radius: 6px; }
   ::selection { background: #cfdcc4; }

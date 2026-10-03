@@ -44,7 +44,7 @@ const isRomantic = computed(() => props.item.tags?.includes('romantico'))
           {{ formatMoney(item.price) }}<small class="block text-[13px] font-normal text-ink-2">{{ formatPriceUnit(item.price) }}</small>
         </div>
       </div>
-      <ul class="text-[15px] leading-snug text-ink-2">
+      <ul class="text-justify text-[15px] leading-snug hyphens-auto text-ink-2">
         <li v-for="line in item.includes" :key="line" class="border-t border-line py-2.5">{{ line }}</li>
       </ul>
       <p v-for="n in item.notes" :key="n" class="text-[13.5px] text-ink-2 italic">{{ n }}</p>

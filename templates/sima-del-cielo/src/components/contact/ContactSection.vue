@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { INSTAGRAM_HANDLE, INSTAGRAM_URL, LOCATION, PHONE_DISPLAY, PHONE_E164, site } from '@/config/site'
-import { whatsappLink } from '@/utils/whatsapp'
 import Reveal from '@/components/ui/Reveal.vue'
 import LocationMap from './LocationMap.vue'
 
 const rows = computed(() => [
-  { label: 'WhatsApp', value: PHONE_DISPLAY, href: whatsappLink(), external: true },
   { label: 'Teléfono', value: PHONE_DISPLAY, href: `tel:${PHONE_E164}` },
   { label: 'Instagram', value: INSTAGRAM_HANDLE, href: INSTAGRAM_URL, external: true },
   ...(site.contact.email ? [{ label: 'Correo', value: site.contact.email, href: `mailto:${site.contact.email}` }] : []),

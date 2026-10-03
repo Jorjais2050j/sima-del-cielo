@@ -9,10 +9,10 @@
 <meta name="theme-color" content="#0f1a10">
 <link rel="icon" href="templates/sima-del-cielo/public/brand/logo-green.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="templates/sima-del-cielo/public/media/packages/explorador-am-1.jpg" fetchpriority="high">
 <style>
-:root{--bg:#f5f3ee;--surface:#ebe7de;--ink:#141a13;--ink-2:#4a5146;--line:rgba(20,26,19,.13);--forest:#2e5e1e;--deep:#0f1a10;--on-dark:#f2efe7;--on-dark-2:#a8b09f;--line-dark:rgba(242,239,231,.14);--serif:"Newsreader",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.2,1);--pad:clamp(20px,5vw,72px);--max:1360px;--r:22px}
+:root{--bg:#f5f3ee;--surface:#ebe7de;--ink:#141a13;--ink-2:#4a5146;--line:rgba(20,26,19,.13);--forest:#2e5e1e;--deep:#0f1a10;--on-dark:#f2efe7;--on-dark-2:#a8b09f;--line-dark:rgba(242,239,231,.14);--serif:"Hanken Grotesk",system-ui,sans-serif;--sans:"Hanken Grotesk",system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.2,1);--pad:clamp(20px,5vw,72px);--max:1360px;--r:22px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 img{display:block;max-width:100%}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
@@ -20,6 +20,8 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--forest)}
 :focus-visible{outline:2px solid var(--forest);outline-offset:3px;border-radius:6px}
 ::selection{background:#cfdcc4}
 section[id]{scroll-margin-top:72px}
+/* Todo el sitio va en Hanken Grotesk (--serif antes era "Newsreader",Georgia,serif). Párrafos justificados con guionado */
+p{text-align:justify;hyphens:auto}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 .eyebrow{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
 .h2{font:300 clamp(44px,7vw,104px)/.95 var(--serif);letter-spacing:-.03em;margin:14px 0 0}
@@ -125,7 +127,8 @@ details.acc summary svg{width:22px;height:22px;transition:transform .4s var(--ea
 @media (min-width:760px){.acc-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .acc-grid h4{margin:0 0 6px;font:600 13px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase}
 .acc-grid p{margin:0;color:var(--ink-2);font-size:15px}
-ol.rules{margin:0;padding:4px 0 40px 1.2em;columns:1;column-gap:56px;color:var(--ink-2);font-size:15px}
+.pkg .list{text-align:justify;hyphens:auto}
+ol.rules{margin:0;padding:4px 0 40px 1.2em;columns:1;column-gap:56px;color:var(--ink-2);font-size:15px;text-align:justify;hyphens:auto}
 ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 @media (min-width:900px){ol.rules{columns:2}}
 
@@ -157,6 +160,8 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 @media (min-width:900px){.includes{grid-template-columns:1fr 1fr 1fr}}
 .includes h4{margin:0 0 14px;font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
 .includes p{margin:0;font:400 22px/1.35 var(--serif)}
+.includes ul{list-style:none;margin:0;padding:0;font:400 19px/1.375 var(--serif);text-align:justify;hyphens:auto}
+.includes li{padding:10px 0;border-top:1px solid var(--line)}.includes li:last-child{border-bottom:1px solid var(--line)}
 .rom{display:grid;gap:28px}
 @media (min-width:900px){.rom{grid-template-columns:1fr 1fr;gap:40px}}
 .rom .pkg-img{aspect-ratio:4/3}
@@ -259,7 +264,8 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 <div class="scrollcue" aria-hidden="true">Descubre<i></i></div>
 </section>
 
-<section class="intro" aria-label="Sobre Sima del Cielo">
+<!-- Oculta a petición del cliente: quitar el atributo hidden para volver a mostrarla -->
+<section class="intro" aria-label="Sobre Sima del Cielo" hidden>
 <div class="wrap">
 <div class="reveal"><div class="eyebrow">Parque ecoturístico</div><p class="big" id="summary"></p></div>
 <div class="aperture"><img src="templates/sima-del-cielo/public/media/packages/rappel-2.jpg" alt="Descenso a rappel en el interior de la sima" width="934" height="1200" loading="lazy" decoding="async"></div>
@@ -289,7 +295,7 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 <div class="picker" id="picker" role="tablist" aria-label="Elige una cabaña"></div>
 <div id="cabinView"></div>
 <div class="includes reveal">
-<div><h4>Todas las tarifas incluyen</h4><p id="stayIncludes"></p></div>
+<div><h4>Todas las tarifas incluyen</h4><ul id="stayIncludes"></ul></div>
 <div><h4>Horarios</h4><p id="stayHours"></p></div>
 <div><h4>Persona extra</h4><p id="stayExtra"></p></div>
 </div>
@@ -305,7 +311,7 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 <section class="sec menu" id="menu">
 <div class="wrap">
 <div class="sec-head reveal">
-<div><div class="eyebrow">Restaurante</div><h2 class="h2">Menú</h2></div>
+<div><h2 class="h2">Restaurante</h2></div>
 <div class="seg" id="menuTabs" role="group" aria-label="Sección del menú"></div>
 </div>
 <div class="menu-grid">
@@ -407,7 +413,7 @@ v.animate([{opacity:0,transform:'translateY(12px)'},{opacity:1,transform:'none'}
 $('#picker').innerHTML=cabins.map((c,i)=>`<button role="tab" aria-selected="${i===0}" data-i="${i}">${esc(c.name)}</button>`).join('');
 $('#picker').onclick=e=>{const b=e.target.closest('button');if(b)showCabin(+b.dataset.i)};
 showCabin(0);
-$('#stayIncludes').textContent=site.stay.includes.join(' · ');
+$('#stayIncludes').innerHTML=site.stay.includes.map(i=>`<li>${esc(i)}</li>`).join('');
 $('#stayHours').textContent=`Check-in a partir de las ${site.stay.checkIn} · Check-out a las ${site.stay.checkOut}`;
 $('#stayExtra').textContent=`${fmt(site.stay.extraGuestFee.amount)} MXN por persona`;
 $('#rules').innerHTML=site.stay.rules.map(r=>`<li>${esc(r)}</li>`).join('');
@@ -438,7 +444,6 @@ document.addEventListener('keydown',e=>{if(lb.classList.contains('open')){if(e.k
 // contact
 const L=site.location,addr=`${L.addressLine}, ${L.postalCode} ${L.locality}, ${L.region}`;
 $('#clist').innerHTML=[
-['WhatsApp',`<a href="${wa()}" target="_blank" rel="noopener">${site.contact.phoneDisplay}</a>`],
 ['Teléfono',`<a href="tel:${site.contact.phoneE164}">${site.contact.phoneDisplay}</a>`],
 ['Instagram',`<a href="${site.social.instagram.url}" target="_blank" rel="noopener">${site.social.instagram.handle}</a>`],
 ...(site.contact.email?[['Correo',`<a href="mailto:${esc(site.contact.email)}">${esc(site.contact.email)}</a>`]]:[]),
