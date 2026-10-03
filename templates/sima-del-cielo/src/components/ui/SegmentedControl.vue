@@ -4,7 +4,7 @@ const model = defineModel<T>({ required: true })
 </script>
 
 <template>
-  <div class="no-scrollbar -mx-5 flex gap-1.5 overflow-x-auto px-5 py-0.5 md:mx-0 md:px-0.5" role="group" :aria-label="label">
+  <div class="flex flex-wrap gap-x-1.5 gap-y-2 p-0.5" role="group" :aria-label="label">
     <button
       v-for="o in options" :key="o.value" type="button" :aria-pressed="model === o.value"
       class="h-10 flex-none rounded-full border px-4.5 text-sm font-medium transition duration-300 ease-premium"

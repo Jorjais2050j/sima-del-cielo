@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { ArrowRight } from 'lucide-vue-next'
+import { computed, ref, watch } from 'vue'
+import { ArrowRight, ChevronDown } from 'lucide-vue-next'
 import type { Package } from '@/types/models'
 import { site } from '@/config/site'
 import { getPackages } from '@/services/packages.service'
@@ -23,6 +23,12 @@ const FILTERS = [
 type FilterValue = (typeof FILTERS)[number]['value']
 const filter = ref<FilterValue>('all')
 const visible = computed(() => (packages.value ?? []).filter(FILTERS.find((f) => f.value === filter.value)!.test))
+
+// En móvil se muestran 4 tarjetas y un botón para ver el resto.
+const MOBILE_LIMIT = 4
+const expanded = ref(false)
+const clipped = computed(() => !expanded.value && visible.value.length > MOBILE_LIMIT)
+watch(filter, () => { expanded.value = false })
 </script>
 
 <template>
@@ -33,10 +39,20 @@ const visible = computed(() => (packages.value ?? []).filter(FILTERS.find((f) =>
       </SectionTitle>
       <SegmentedControl v-model="filter" :options="FILTERS" label="Filtrar paquetes" class="mb-9" />
 
-      <!-- Móvil: carrusel con scroll-snap (tarjeta asomándose). Escritorio: grid de 3. -->
-      <div class="no-scrollbar -mx-5 grid auto-cols-[82%] grid-flow-col snap-x snap-mandatory scroll-px-5 gap-4 overflow-x-auto px-5 pb-2 sm:auto-cols-[46%] lg:mx-0 lg:grid-flow-row lg:grid-cols-3 lg:gap-x-7 lg:gap-y-12 lg:overflow-visible lg:px-0">
-        <PackageCard v-for="p in visible" :key="p.id" :item="p" class="snap-start" />
+      <!-- Móvil: lista vertical (sin scroll lateral). Tablet: 2 columnas. Escritorio: 3. -->
+      <div class="grid gap-11 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-3 lg:gap-x-7">
+        <PackageCard
+          v-for="(p, i) in visible" :key="p.id" :item="p" mobile-ratio="4/3"
+          :class="{ 'max-sm:hidden': clipped && i >= MOBILE_LIMIT }"
+        />
       </div>
+      <button
+        v-if="clipped" type="button"
+        class="mt-9 flex h-13 w-full items-center justify-center gap-2 rounded-full border border-line text-[15px] font-medium text-ink transition-colors duration-300 hover:border-ink/30 sm:hidden"
+        @click="expanded = true"
+      >
+        Ver los {{ visible.length }} paquetes <ChevronDown :size="16" />
+      </button>
 
       <div class="mt-[clamp(40px,5vw,64px)] flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-t border-line pt-6 text-sm text-ink-2">
         <span>{{ site.business.pricesNote }}</span>

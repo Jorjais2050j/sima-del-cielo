@@ -88,7 +88,7 @@ p{text-align:justify;hyphens:auto}
 .sec{padding:clamp(80px,10vw,160px) 0}
 .sec-head{display:grid;gap:28px;margin-bottom:clamp(40px,6vw,80px)}
 @media (min-width:900px){.sec-head{grid-template-columns:1fr auto;align-items:end}}
-.seg{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--pad)*-1);padding:2px var(--pad)}
+.seg{display:flex;flex-wrap:wrap;gap:8px 6px;margin:0 calc(var(--pad)*-1);padding:2px var(--pad)}
 .seg::-webkit-scrollbar{display:none}
 .seg button{flex:none;height:40px;padding:0 18px;border-radius:999px;font:500 14px/1 var(--sans);color:var(--ink-2);border:1px solid var(--line);transition:all .3s var(--ease)}
 .seg button:hover{color:var(--ink);border-color:rgba(20,26,19,.3)}
@@ -96,11 +96,11 @@ p{text-align:justify;hyphens:auto}
 @media (min-width:900px){.seg{margin:0;padding:2px}}
 
 /* packages */
-.rail{display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--pad)*-1);padding:0 var(--pad) 8px;scroll-padding:0 var(--pad);scrollbar-width:none}
-.rail::-webkit-scrollbar{display:none}
-.rail>*{scroll-snap-align:start}
-@media (min-width:640px){.rail{grid-auto-columns:46%}}
-@media (min-width:1024px){.rail{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin:0;padding:0;gap:48px 28px}}
+.rail{display:grid;gap:44px}
+@media (min-width:640px){.rail{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 24px}}
+@media (min-width:1024px){.rail{grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 28px}}
+.more{display:none;width:100%;height:52px;margin-top:36px;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:999px;font:500 15px/1 var(--sans);color:var(--ink);transition:border-color .3s var(--ease)}.more:hover{border-color:rgba(20,26,19,.3)}.more svg{width:16px;height:16px}
+@media (max-width:639px){.rail .pkg-img{aspect-ratio:4/3}.rail.clip>.pkg:nth-child(n+5){display:none}.rail.clip+.more{display:flex}}
 .pkg{display:flex;flex-direction:column;min-width:0}
 .pkg-img{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--surface)}
 .pkg-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
@@ -281,6 +281,7 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 </div>
 <div class="seg reveal" id="pkgFilter" role="group" aria-label="Filtrar paquetes" style="margin-bottom:36px"></div>
 <div class="rail" id="pkgList"></div>
+<button class="more" id="pkgMore" type="button"></button>
 <div class="meta-row"><span data-prices-note></span><a class="link" data-wa href="#" target="_blank" rel="noopener">Reservaciones por WhatsApp <i data-lucide="arrow-right"></i></a></div>
 <details class="acc"><summary>Recomendaciones para tu visita <i data-lucide="plus"></i></summary><div class="acc-grid" id="recos"></div></details>
 </div>
@@ -393,7 +394,8 @@ const pkgCard=p=>{const img=p.images[0];const title=p.name+(p.schedule?' '+SCHED
 <div class="pkg-body"><div class="pkg-top"><h3>${esc(p.name)}</h3><div class="price">${fmt(p.price.amount)}<small>${unit(p.price)}</small></div></div>
 <ul class="list">${p.includes.map(i=>`<li>${esc(i)}</li>`).join('')}</ul>${p.notes.map(n=>`<p class="note">${esc(n)}</p>`).join('')}
 <div class="cta-row"><a class="link" href="${wa(`Hola, me interesa el paquete ${title}.`)}" target="_blank" rel="noopener">Consultar disponibilidad ${icon('arrow-right')}</a>${p.reel?`<a class="reel" href="${esc(p.reel)}" target="_blank" rel="noopener" aria-label="Ver reel de ${esc(title)} en Instagram">${IG} Ver reel</a>`:''}</div></div></article>`};
-const drawPkgs=f=>{$('#pkgList').innerHTML=packages.filter(FILTERS.find(x=>x[0]===f)[2]).map(pkgCard).join('');$('#pkgList').scrollLeft=0;hydrate($('#pkgList'))};
+const drawPkgs=f=>{const list=packages.filter(FILTERS.find(x=>x[0]===f)[2]),el=$('#pkgList');el.innerHTML=list.map(pkgCard).join('');el.classList.toggle('clip',list.length>4);$('#pkgMore').innerHTML=`Ver los ${list.length} paquetes ${icon('chevron-down')}`;hydrate(el)};
+$('#pkgMore').onclick=()=>$('#pkgList').classList.remove('clip');
 $('#pkgFilter').innerHTML=FILTERS.map(([k,l],i)=>`<button data-f="${k}" aria-pressed="${i===0}">${l}</button>`).join('');
 $('#pkgFilter').onclick=e=>{const b=e.target.closest('button');if(!b)return;$$('#pkgFilter button').forEach(x=>x.setAttribute('aria-pressed',x===b));drawPkgs(b.dataset.f)};
 $('#recos').innerHTML=site.visit.recommendations.map(r=>`<div><h4>${esc(r.title)}</h4><p>${esc(r.text)}</p></div>`).join('');
