@@ -10,7 +10,7 @@
       "Cama individual",
       "Cocineta con frigobar",
       "Baño (1)",
-      "Sala / comedor chico"
+      "Sala / Comedor chico"
     ],
     "capacity": {
       "baseGuests": 2,
@@ -65,7 +65,7 @@
     "features": [
       "Cama king size (1)",
       "Baño (1)",
-      "Sala / comedor chico"
+      "Sala / Comedor chico"
     ],
     "capacity": {
       "baseGuests": 2,
@@ -120,7 +120,7 @@
     "features": [
       "Cama matrimonial (2)",
       "Baño (1)",
-      "Sala / comedor chico"
+      "Sala / Comedor chico"
     ],
     "capacity": {
       "baseGuests": 2,
@@ -175,7 +175,7 @@
     "features": [
       "Cama king size (1)",
       "Baño (1)",
-      "Sala / comedor chico"
+      "Sala / Comedor chico"
     ],
     "capacity": {
       "baseGuests": 2,
@@ -226,7 +226,7 @@
       "Planta alta: cama individual (2) y matrimonial (1)",
       "Cocineta con frigobar",
       "Baño (2)",
-      "Sala / comedor familiar",
+      "Sala / Comedor familiar",
       "Terrazas"
     ],
     "capacity": {

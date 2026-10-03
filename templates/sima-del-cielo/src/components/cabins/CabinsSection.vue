@@ -24,7 +24,7 @@ const stay = site.stay
 <template>
   <section id="cabanas" class="bg-surface py-[clamp(80px,10vw,160px)]">
     <div class="container-page">
-      <SectionTitle eyebrow="Hospedaje" title="Cabañas">
+      <SectionTitle title="Cabañas">
         <SegmentedControl v-model="tab" :options="TABS" label="Categoría" />
       </SectionTitle>
 
