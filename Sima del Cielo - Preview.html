@@ -173,8 +173,9 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 .menu .seg button[aria-pressed="true"]{background:var(--on-dark);color:var(--ink);border-color:var(--on-dark)}
 .menu-grid{display:grid;gap:48px}
 @media (min-width:1024px){.menu-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:80px}}
-.menu-aside{display:none}
-@media (min-width:1024px){.menu-aside{display:grid;gap:16px;position:sticky;top:96px;align-self:start}.menu-aside img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r)}.menu-aside img:first-child{aspect-ratio:4/5}}
+.menu-aside{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.menu-aside img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:var(--r)}
+@media (min-width:1024px){.menu-aside{grid-template-columns:1fr;gap:16px;position:sticky;top:96px;align-self:start}.menu-aside img:first-child{aspect-ratio:4/5}}
 .menu-cols{columns:1;column-gap:64px}
 @media (min-width:760px){.menu-cols{columns:2}}
 .mcat{break-inside:avoid;margin:0 0 48px}
@@ -315,7 +316,7 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 <div class="seg" id="menuTabs" role="group" aria-label="Sección del menú"></div>
 </div>
 <div class="menu-grid">
-<div class="menu-aside"><img src="templates/sima-del-cielo/public/media/packages/senderos-am-2.jpg" alt="Chilaquiles con huevo" loading="lazy" width="501" height="502" style="aspect-ratio:4/5"><img src="templates/sima-del-cielo/public/media/packages/senderos-pm-2.jpg" alt="Cochito horneado" loading="lazy" width="513" height="514"></div>
+<div class="menu-aside"><img src="templates/sima-del-cielo/public/media/packages/senderos-am-2.jpg" alt="Chilaquiles con huevo" loading="lazy" width="501" height="502"><img src="templates/sima-del-cielo/public/media/packages/senderos-pm-2.jpg" alt="Cochito horneado" loading="lazy" width="513" height="514"></div>
 <div class="menu-cols" id="menuCols"></div>
 </div>
 </div>

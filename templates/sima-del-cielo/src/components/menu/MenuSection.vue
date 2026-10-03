@@ -25,8 +25,8 @@ const aside = [
         <SegmentedControl v-model="group" :options="groups" label="Sección del menú" dark />
       </SectionTitle>
       <div class="grid gap-12 lg:grid-cols-[minmax(0,.8fr)_minmax(0,1.4fr)] lg:gap-20">
-        <div class="sticky top-24 hidden gap-4 self-start lg:grid">
-          <img v-for="(m, i) in aside" :key="m.src" v-bind="m" loading="lazy" class="w-full rounded-card object-cover" :class="i === 0 ? 'aspect-[4/5]' : 'aspect-square'" />
+        <div class="grid grid-cols-2 gap-3 self-start lg:sticky lg:top-24 lg:grid-cols-1 lg:gap-4">
+          <img v-for="(m, i) in aside" :key="m.src" v-bind="m" loading="lazy" class="w-full rounded-card object-cover" :class="i === 0 ? 'aspect-square lg:aspect-[4/5]' : 'aspect-square'" />
         </div>
         <div class="columns-1 gap-16 md:columns-2">
           <MenuCard v-for="c in categories" :key="c.id" :category="c" />
