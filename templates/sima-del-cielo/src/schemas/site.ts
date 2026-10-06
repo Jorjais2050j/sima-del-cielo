@@ -43,6 +43,8 @@ export const SiteSchema = z.object({
     video: z.object({
       /** media: 'mobile' | 'desktop' para servir un archivo más ligero en móvil */
       sources: z.array(z.object({ src: z.string(), type: z.string(), media: z.enum(['mobile', 'desktop']).optional() })),
+      /** segundo en el que el loop regresa al inicio (para saltar cierres en blanco del video) */
+      loopEnd: z.number().positive().optional(),
     }),
   }),
   intro: z.object({ image: MediaSchema }),

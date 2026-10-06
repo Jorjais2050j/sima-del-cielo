@@ -12,11 +12,12 @@ import BaseButton from '@/components/ui/BaseButton.vue'
 </script>
 
 <template>
-  <HeroVideo :poster="site.hero.poster" :sources="site.hero.video.sources">
+  <HeroVideo :poster="site.hero.poster" :sources="site.hero.video.sources" :loop-end="site.hero.video.loopEnd">
     <div class="eyebrow !text-white/80">{{ site.location.locality }}, {{ site.location.region }}</div>
-    <h1 class="font-serif text-[clamp(64px,13vw,196px)] leading-[.86] font-light tracking-[-.045em]">
-      {{ site.business.name }}
-      <em class="mt-[.25em] block text-[.21em] tracking-[-.02em] text-white/88">{{ site.business.tagline }}</em>
+    <!-- nombre y tagline con la misma tipografía (Hanken light, sin cursiva); el nombre cabe en una línea en móvil -->
+    <h1 class="font-serif text-[clamp(40px,6.5vw_+_22px,144px)] leading-[.86] font-light tracking-[-.045em]">
+      <span class="whitespace-nowrap">{{ site.business.name }}</span>
+      <span class="mt-[.3em] block text-[length:max(12px,.25em)] tracking-[-.01em] text-white/88">{{ site.business.tagline }}</span>
     </h1>
     <!-- CTA: preparado para "Reservar" (Fase 2) sin cambiar el layout -->
     <div class="flex flex-wrap gap-3">

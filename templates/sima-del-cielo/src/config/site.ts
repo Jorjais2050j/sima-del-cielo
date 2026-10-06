@@ -23,6 +23,6 @@ export const GOOGLE_MAPS_EMBED_URL = site.location.embedUrl
 export const NAV_ITEMS = [
   { label: 'Paquetes', hash: '#paquetes', path: '/paquetes' },
   { label: 'Cabañas', hash: '#cabanas', path: '/cabanas' },
-  { label: 'Menú', hash: '#menu', path: '/menu' },
+  { label: 'Restaurante', hash: '#menu', path: '/menu' },
   { label: 'Contacto', hash: '#contacto', path: '/contacto' },
 ] as const

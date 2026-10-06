@@ -2,7 +2,7 @@
   "groups": [
     { "id": "cocina", "name": "Cocina" },
     { "id": "bebidas", "name": "Bebidas" },
-    { "id": "para-llevar", "name": "Para llevar" }
+    { "id": "para-llevar", "name": "Nuestros productos" }
   ],
   "categories": [
     {
@@ -162,7 +162,8 @@
       "items": [
         { "id": "miel", "name": "Miel Sima del Cielo", "description": null, "price": null, "variants": [ { "label": "½ lt", "price": 110 }, { "label": "1 lt", "price": 195 } ] },
         { "id": "cafe-sima", "name": "Café Sima del Cielo", "description": null, "price": null, "variants": [ { "label": "½ kg", "price": 225 }, { "label": "1 kg", "price": 425 } ] },
-        { "id": "papalote", "name": "Papalote Sima del Cielo", "description": null, "price": 150 }
+        { "id": "papalote", "name": "Papalote Sima del Cielo", "description": null, "price": 150 },
+        { "id": "mezcal-750", "name": "Mezcal 750 ml", "description": null, "price": 400 }
       ]
     }
   ]
