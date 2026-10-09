@@ -70,9 +70,8 @@ p{text-align:justify;hyphens:auto}
 .hero-body .wrap{display:grid;gap:28px}
 .hero .eyebrow{color:rgba(255,255,255,.8)}
 /* nombre y tagline con la misma tipografía (Hanken light, sin cursiva); el nombre cabe en una línea en móvil */
-.hero h1{margin:0;font:300 clamp(40px,6.5vw + 22px,144px)/.86 var(--serif);letter-spacing:-.045em}
-.hero h1 .name{white-space:nowrap}
-.hero h1 .tag{display:block;font-size:max(12px,.25em);letter-spacing:-.01em;margin-top:.3em;color:rgba(255,255,255,.88)}
+.hero h1{margin:0;line-height:0}
+.hero h1 img{display:block;width:auto;height:auto;max-width:min(78vw,520px);max-height:min(46svh,430px);filter:drop-shadow(0 4px 18px rgba(0,0,0,.35))}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
 .scrollcue{position:absolute;z-index:2;right:var(--pad);bottom:calc(clamp(40px,8vh,88px) + env(safe-area-inset-bottom));display:none;align-items:center;gap:14px;font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.75)}
 .scrollcue i{display:block;width:1px;height:56px;background:rgba(255,255,255,.35);position:relative;overflow:hidden}
@@ -265,7 +264,7 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 <div class="hero-media" id="heroMedia"><video autoplay muted loop playsinline preload="auto" poster="templates/sima-del-cielo/public/media/video/hero-poster.jpg" aria-hidden="true"><source src="templates/sima-del-cielo/public/media/video/hero.mp4" type="video/mp4"></video></div>
 <div class="hero-body"><div class="wrap">
 <div class="eyebrow">San Fernando, Chiapas</div>
-<h1><span class="name">Sima del Cielo</span><span class="tag">Aventura Zoque</span></h1>
+<h1><img src="templates/sima-del-cielo/public/brand/logo-white.png" alt="Sima del Cielo · Aventura Zoque" width="865" height="721" decoding="async"></h1>
 <div class="hero-cta"><a class="btn btn-light" href="#paquetes">Ver paquetes</a><a class="btn btn-ghost-light" data-wa href="#" target="_blank" rel="noopener">Escríbenos</a></div>
 </div></div>
 <div class="scrollcue" aria-hidden="true">Descubre<i></i></div>
