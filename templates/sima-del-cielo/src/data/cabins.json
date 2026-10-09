@@ -48,10 +48,10 @@
         "height": 545
       },
       {
-        "src": "/media/cabins/pura-vida-5.jpeg",
+        "src": "/media/cabins/pura-vida-5.jpg",
         "alt": "Baño con lavabo de talavera",
-        "width": 996,
-        "height": 1090
+        "width": 1024,
+        "height": 1032
       }
     ],
     "isActive": true
@@ -319,10 +319,10 @@
         "height": 1108
       },
       {
-        "src": "/media/cabins/ilusion-4.jpeg",
+        "src": "/media/cabins/ilusion-4.jpg",
         "alt": "Estancia con vitrales",
-        "width": 967,
-        "height": 1080
+        "width": 927,
+        "height": 1152
       }
     ],
     "isActive": true
