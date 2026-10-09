@@ -36,10 +36,10 @@
         "height": 1200
       },
       {
-        "src": "/media/cabins/pura-vida-3.jpg",
+        "src": "/media/cabins/pura-vida-3.jpeg",
         "alt": "Recámara con cama king size",
-        "width": 502,
-        "height": 545
+        "width": 1006,
+        "height": 1104
       },
       {
         "src": "/media/cabins/pura-vida-4.jpg",
@@ -48,10 +48,10 @@
         "height": 545
       },
       {
-        "src": "/media/cabins/pura-vida-5.jpg",
+        "src": "/media/cabins/pura-vida-5.jpeg",
         "alt": "Baño con lavabo de talavera",
-        "width": 498,
-        "height": 545
+        "width": 996,
+        "height": 1090
       }
     ],
     "isActive": true
@@ -319,10 +319,10 @@
         "height": 1108
       },
       {
-        "src": "/media/cabins/ilusion-4.jpg",
+        "src": "/media/cabins/ilusion-4.jpeg",
         "alt": "Estancia con vitrales",
-        "width": 497,
-        "height": 555
+        "width": 967,
+        "height": 1080
       }
     ],
     "isActive": true
