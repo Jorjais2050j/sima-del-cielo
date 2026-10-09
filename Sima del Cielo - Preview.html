@@ -76,12 +76,12 @@ p{text-align:justify;hyphens:auto}
 @font-face{font-family:'Barlow Condensed';font-weight:600;font-style:normal;font-display:swap;src:url(templates/sima-del-cielo/public/fonts/barlow-condensed-latin-600-normal.woff2) format('woff2')}
 .hero h1{margin:0;font-size:clamp(40px,6.5vw + 22px,144px);line-height:.9;text-transform:uppercase;text-shadow:0 3px 20px rgba(0,0,0,.35)}
 .hero h1 .name{display:block;white-space:nowrap;line-height:.9}
-.hero h1 .name .w{display:inline-block;font:400 .82em/.9 'Bevan',Georgia,serif;letter-spacing:.01em;filter:url(#grunge)}
+.hero h1 .name .w{display:inline-block;font:400 .82em/.9 'Bevan',Georgia,serif;letter-spacing:.01em}
 .hero h1 .name small{font:600 .4em/1 'Barlow Condensed',Arial Narrow,sans-serif;letter-spacing:.14em;margin:0 .05em;vertical-align:.55em}
 .hero h1 .tag{display:block;margin-top:.16em;line-height:.95;color:rgba(255,255,255,.95)}
 .hero h1 .tag span{display:block;width:fit-content;transform-origin:left bottom}
-.hero h1 .tag .av{font:400 .46em/1 'Holtwood One SC',Georgia,serif;letter-spacing:.04em;transform:skewX(-10deg);filter:url(#stamp)}
-.hero h1 .tag .zq{font:400 .9em/.95 'Alfa Slab One',Georgia,serif;letter-spacing:.02em;margin-top:.06em;transform:skewX(-13deg) rotate(-2deg);filter:url(#grunge)}
+.hero h1 .tag .av{font:400 .46em/1 'Holtwood One SC',Georgia,serif;letter-spacing:.04em;transform:skewX(-10deg)}
+.hero h1 .tag .zq{font:400 .9em/.95 'Alfa Slab One',Georgia,serif;letter-spacing:.02em;margin-top:.06em;transform:skewX(-13deg) rotate(-2deg)}
 @media(max-width:899px){.hero h1{font-size:min(clamp(40px,6.5vw + 22px,144px),calc((100vw - 44px) / 7.2))}}
 @media(min-width:900px){.hero h1{font-size:clamp(26px,calc((6.5vw + 22px) / 3),48px)}}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
@@ -271,10 +271,6 @@ ol.rules li{break-inside:avoid;padding:0 0 12px 6px}
 <div class="sheet-foot"><a data-wa href="#">WhatsApp · <span data-phone></span></a><a data-ig href="#" target="_blank" rel="noopener"></a></div>
 </div>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
-<filter id="grunge" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" seed="7" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 -3.7" result="m"/><feComposite in="SourceGraphic" in2="m" operator="in"/></filter>
-<filter id="stamp" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".9 .35" numOctaves="2" seed="3" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 -3.95" result="m"/><feComposite in="SourceGraphic" in2="m" operator="in"/></filter>
-</defs></svg>
 <main id="top">
 <section class="hero" aria-label="Sima del Cielo">
 <div class="hero-media" id="heroMedia"><video autoplay muted loop playsinline preload="auto" poster="templates/sima-del-cielo/public/media/video/hero-poster.jpg" aria-hidden="true"><source src="templates/sima-del-cielo/public/media/video/hero.mp4" type="video/mp4"></video></div>
