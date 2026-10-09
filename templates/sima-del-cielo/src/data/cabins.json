@@ -93,8 +93,8 @@
       {
         "src": "/media/cabins/alegria-3.jpg",
         "alt": "Recámara con cama king size",
-        "width": 502,
-        "height": 546
+        "width": 992,
+        "height": 1079
       },
       {
         "src": "/media/cabins/alegria-4.jpg",
@@ -105,8 +105,8 @@
       {
         "src": "/media/cabins/alegria-5.jpg",
         "alt": "Lavabo de talavera",
-        "width": 502,
-        "height": 545
+        "width": 992,
+        "height": 1077
       }
     ],
     "isActive": true
@@ -148,8 +148,8 @@
       {
         "src": "/media/cabins/armonia-3.jpg",
         "alt": "Recámara con camas matrimoniales",
-        "width": 493,
-        "height": 540
+        "width": 992,
+        "height": 1087
       },
       {
         "src": "/media/cabins/armonia-4.jpg",
@@ -203,8 +203,8 @@
       {
         "src": "/media/cabins/paraiso-3.jpg",
         "alt": "Puertas de madera y cristal al jardín",
-        "width": 497,
-        "height": 545
+        "width": 992,
+        "height": 1088
       },
       {
         "src": "/media/cabins/paraiso-4.jpg",
@@ -267,14 +267,14 @@
       {
         "src": "/media/cabins/serenidad-5.jpg",
         "alt": "Comedor familiar",
-        "width": 502,
-        "height": 545
+        "width": 992,
+        "height": 1077
       },
       {
         "src": "/media/cabins/serenidad-6.jpg",
         "alt": "Vista al valle desde la terraza",
-        "width": 496,
-        "height": 545
+        "width": 990,
+        "height": 1088
       }
     ],
     "isActive": true
