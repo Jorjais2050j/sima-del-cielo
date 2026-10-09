@@ -82,7 +82,7 @@
       "Descenso a rappel con equipo a la Sima del Cielo"
     ],
     "notes": [],
-    "reel": "https://www.instagram.com/sima.delcielo.chiapas/",
+    "reel": "https://www.instagram.com/reel/DYs2ZvOxKG7/?psln=MW9oYWZ0bGZwdDFsZQ%3D%3D",
     "images": [
       {
         "src": "/media/packages/rappel-1.jpg",
@@ -169,67 +169,6 @@
     ]
   },
   {
-    "id": "pkg-recorrido",
-    "slug": "recorrido",
-    "name": "Pesca",
-    "schedule": null,
-    "category": "aventura",
-    "tags": [],
-    "price": {
-      "amount": 200,
-      "currency": "MXN",
-      "unit": "person",
-      "guests": 1
-    },
-    "includes": [
-      "Acceso al parque",
-      "Recorrido interpretativo por los senderos al mirador de la Sima del Cielo"
-    ],
-    "notes": [],
-    "images": [
-      {
-        "src": "/media/packages/recorrido-1.jpg",
-        "alt": "Pareja pescando en el estanque del parque",
-        "width": 648,
-        "height": 810
-      },
-      {
-        "src": "/media/packages/recorrido-2.jpg",
-        "alt": "Pareja recorriendo el sendero",
-        "width": 481,
-        "height": 481
-      }
-    ]
-  },
-  {
-    "id": "pkg-camping",
-    "slug": "camping",
-    "name": "Camping",
-    "schedule": null,
-    "category": "aventura",
-    "tags": [],
-    "price": {
-      "amount": 180,
-      "currency": "MXN",
-      "unit": "person",
-      "guests": 1
-    },
-    "includes": [
-      "Acceso a áreas comunes para acampar"
-    ],
-    "notes": [
-      "No incluye casa de campaña ni acceso a senderos"
-    ],
-    "images": [
-      {
-        "src": "/media/packages/camping-1.jpg",
-        "alt": "Casa de campaña en el área de camping",
-        "width": 934,
-        "height": 1200
-      }
-    ]
-  },
-  {
     "id": "pkg-senderos-am",
     "slug": "senderos-am",
     "name": "Senderos",
@@ -294,6 +233,63 @@
         "alt": "Cochito horneado servido con arroz y ensalada",
         "width": 513,
         "height": 514
+      }
+    ]
+  },
+  {
+    "id": "pkg-recorrido",
+    "slug": "recorrido",
+    "name": "Pesca",
+    "schedule": null,
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 200,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso al parque",
+      "Pesca en el estanque del parque",
+      "Muelle de madera con vista a las cabañas",
+      "Actividad para disfrutar en pareja, en familia o con amigos"
+    ],
+    "notes": [],
+    "images": [
+      {
+        "src": "/media/packages/recorrido-1.jpg",
+        "alt": "Pareja pescando en el estanque del parque",
+        "width": 648,
+        "height": 810
+      }
+    ]
+  },
+  {
+    "id": "pkg-camping",
+    "slug": "camping",
+    "name": "Camping",
+    "schedule": null,
+    "category": "aventura",
+    "tags": [],
+    "price": {
+      "amount": 180,
+      "currency": "MXN",
+      "unit": "person",
+      "guests": 1
+    },
+    "includes": [
+      "Acceso a áreas comunes para acampar"
+    ],
+    "notes": [
+      "No incluye casa de campaña ni acceso a senderos"
+    ],
+    "images": [
+      {
+        "src": "/media/packages/camping-1.jpg",
+        "alt": "Casa de campaña en el área de camping",
+        "width": 934,
+        "height": 1200
       }
     ]
   },
