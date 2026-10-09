@@ -79,6 +79,7 @@ p{text-align:justify;hyphens:auto}
 .hero h1 .tag span{display:block;transform:skewX(-9deg);transform-origin:left bottom}
 .hero h1 .tag .av{font-size:.34em;letter-spacing:.06em}
 .hero h1 .tag .zq{font-size:.72em;letter-spacing:.02em;margin-top:.04em}
+@media(min-width:900px){.hero h1{font-size:clamp(26px,calc((6.5vw + 22px) / 3),48px)}}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
 .scrollcue{position:absolute;z-index:2;right:var(--pad);bottom:calc(clamp(40px,8vh,88px) + env(safe-area-inset-bottom));display:none;align-items:center;gap:14px;font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.75)}
 .scrollcue i{display:block;width:1px;height:56px;background:rgba(255,255,255,.35);position:relative;overflow:hidden}
