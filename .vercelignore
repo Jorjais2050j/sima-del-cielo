@@ -1,0 +1,11 @@
+# Sólo se sube lo que necesita scripts/build-site.mjs
+/*
+!/index.html
+!/vercel.json
+!/scripts
+!/templates
+/templates/*
+!/templates/sima-del-cielo
+/templates/sima-del-cielo/*
+!/templates/sima-del-cielo/public
+!/templates/sima-del-cielo/src
