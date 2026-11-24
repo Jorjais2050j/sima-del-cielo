@@ -3,7 +3,7 @@
 import { cpSync, mkdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
-const SITE_URL = 'https://simadelcielochiapas.com'
+const SITE_URL = 'https://www.simadelcielochiapas.com'
 const APP = 'templates/sima-del-cielo'
 const OUT = 'dist'
 
